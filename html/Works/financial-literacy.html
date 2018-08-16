@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111016994-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111016994-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <title>Mirror Mirror | Yanfeng Jin (Tony)</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/icon-tab.ico">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel = "stylesheet" type = "text/css" href = "../../css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../../css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Roboto+Slab:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> -->
+    <link href="../../css/zoom.css" rel="stylesheet">
+    <script src="../../js/transition.js"></script>
+    <script src="../../js/zoom.js"></script>
+
+
+    <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
+    <script src="../../js/script.js" charset="utf-8"></script>
+
+
+
+    <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1409449789");
+    </script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../Portfolio.html">Tony Jin</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
+        <ul class="nav navbar-nav">
+          <li><a class="selected hvr-underline-from-left" href="../Portfolio.html#my-work">Projects</a></li>
+          <li><a class="hvr-underline-from-left" href="../../assets/Yanfeng-Jin-Resume-v5.pdf">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="../About.html">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 50px">
+        <nav class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="bs-docs-sidebar">
+            <ul class="nav nav-stacked"id="sidebar">
+
+              <li>
+                <a href="#overview">Overview</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#problem">Problem</a></li>
+                  <li><a href="#solution">Solution</a></li>
+                  <li><a href="#methods">Our Approach</a></li>
+                  <li><a href="#my-role">My Contribution</a></li>
+                  <li><a href="#design-outcome">Design Outcome</a></li>
+                  <!-- <li><a href="#lessons-learned">What I Learned</a></li> -->
+                </ul>
+              </li>
+
+              <li>
+                <a href="#research">Research</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#lit-review">Literature Review</a></li>
+                  <li><a href="#comp-analysis">Competitive Analysis</a></li>
+                  <li><a href="#surveys">Surveys</a></li>
+                  <li><a href="#interviews">Interviews & Affinity Mapping</a></li>
+                  <li><a href="#key-takeaways">Key Takeaways</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#design">Design</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#ideation">Ideation</a></li>
+                  <li><a href="#design-alt">Design Alternatives</a></li>
+                  <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
+                  <li><a href="#info-arch">Information Architecture</a></li>
+                  <li><a href="#wireframes">Wireframes</a></li>
+                  <li><a href="#final-design">Final Design & User Flow</a></li>
+                  <li><a href="#prototype-small">Prototype</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#evaluate">Evaluate</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#usability">Usability Testing</a></li>
+                  <li><a href="#design-iterations">Design Iterations</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
+
+          <h1 class="article-title">Mirror Mirror</h1>
+
+          <p class="article-subtitle">Helping emerging adults reflect on their past purchasing decisions and form good financial habits</p>
+          <hr>
+
+          <img src="../../assets/walker-perspective3.png" alt="Financial Literacy" class="img-responsive col-centered full-img">
+
+          <section id="overview" class="group">
+              <h6>           </h6><br>
+
+          <!-- </section>
+        </div>
+
+        <img class="img-responsive full-img"src="../../assets/walker-problem-quote3.png" alt="problem">
+        <br><br><br>
+
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
+          <section class="group"> -->
+
+              <h3>Overview</h3>
+              <hr>
+
+
+
+              <div class="row">
+                <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h4>Problem</h4>
+                    <p>Research shows that <strong>young American adults don't have adequate knowledge in personal finance</strong>, and need better guidance on managing their financial resources.</p>
+
+                    <h4 id="solution">Solution</h4>
+                    <p>We present Mirror Mirror, a mobile app that helps emerging adults <strong>reflect on their past purchases</strong> and <strong>better understand the difference between the price of a product and its real value</strong>, one of the most important financial concepts one should understand based on our user research. <strong><span class="highlight">Our application encourages users</span> to evaluate their purchase decisions, provides actionable and personalized insights based on users' own reflections, and helps users avoid making purchases that they might regret in the future</strong>.</p>
+                </div>
+
+                <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>My Role</h4>
+                  <p>UX Designer, UX Researcher</p>
+                  <h4>Timeline</h4>
+                  <p>Sept. 2017 - Dec. 2017 </p>
+                  <h4>Team Members</h4>
+                  <p>Tony Jin, Michelle Ma, Jason Paul, Sijia Xiao</p>
+                  <h4></h4>
+                  <h4>Tools</h4>
+                  <p>Balsamiq, Sketch, InVision</p>
+                  <br>
+                  <br>
+                </div>
+
+
+
+                <!-- <div id="objective" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h4>The Problem</h4>
+                    <p>Research shows that young American adults don't have adequate knowledge in personal finance, and need better guidance on managing their financial resources.</p>
+
+                    <h4>Our Solution</h4>
+                    <p>We present Mirror Mirror, a mobile app that helps emerging adults reflect on their past purchases and better understand the difference between the price of a product and its real value, one of the most important financial concepts one should understand based on our user research. Our application encourages users to evaluate their purchase decisions, provides actionable and personalized insights based on users' own reflections, and helps users avoid making purchases that they might regret in the future.
+                    </p>
+                </div>
+
+                <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <h4>My Role</h4>
+                  <p>UX Designer, UX Researcher</p>
+                  <h4>Timeline</h4>
+                  <p>Sept. 2017 - Dec. 2017 </p>
+                  <h4>Team Members</h4>
+                  <p>Tony Jin, Michelle Ma, Jason Paul, Sijia Xiao</p>
+                  <h4></h4>
+                  <h4>Tools</h4>
+                  <p>Balsamiq, Sketch, InVision</p>
+                  <br>
+                  <br>
+                </div> -->
+
+              </div>
+          </section>
+
+          <div id="methods" class="subgroup">
+              <h4>Our Approach</h4>
+              <img class="img-responsive full-img" src="../../assets/walker-design-process.png" alt="">
+          </div>
+        <!-- </div>
+
+
+          <section class="group">
+
+          </section>
+
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
+          <section class="group"> -->
+              <div id="my-role" class="subgroup">
+                  <h4>My Contribution</h4>
+                  <!-- <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <p class="small-margin-bottom"><strong>Research & Synthesis:</strong></p>
+                      <ul>
+                        <li>Conducted literature review</li>
+                        <li>Conducted semi-structured interviews with potential users and experts</li>
+                        <li>Analyzed qualitative data in survey results</li>
+                        <li>Created affinity mapping with my team</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <p class="small-margin-bottom"><strong>Ideation:</strong></p>
+                      <ul>
+                        <li>My ideas of providing in-context feedback, visualizing one's future financial status and co-planning a major family spending were all modified and developed into our four final concepts</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <p class="small-margin-bottom"><strong>Prototyping:</strong></p>
+                      <ul>
+                        <li>Advocated for collecting user feedback</li>
+                        <li>Created Information Architecture as a group</li>
+                        <li>Designed wireframes for the Settings Tab</li>
+                        <li>Created the user-flow of the app</li>
+                        <li>Created an interactive prototype using InVision</li>
+                      </ul>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <p class="small-margin-bottom"><strong>Evaluation:</strong></p>
+                      <ul>
+                        <li>Moderated usability testing sessions</li>
+                        <li>Led the discussion for deriving design implications from evaluation data</li>
+                      </ul>
+                    </div>
+                  </div> -->
+
+
+
+
+
+
+
+
+                  <p>During the research phase, I conducted <strong>a literature review</strong> on personal finance education and <strong>semi-structured interviews</strong> with potential users and financial experts.
+
+                  <br><br>During the ideation phase, <strong>three of my ideas were modified and developed into our four final concepts</strong>. I then <strong>advocated for collecting user feedback</strong>, which helped us narrow our ideas down. I contributed to the <strong>information architecture design</strong>, and was responsible for <strong>creating the wireframes for the settings tab</strong>. I then created the <strong>user-flow</strong> of the app and an <strong>interactive prototype using InVision</strong>. <br><br>Finally, I moderated several <strong>usability testing</strong> sessions, and <strong>led the discussion of deriving design implications from the data</strong> with my teammates.
+                  </p>
+              </div>
+
+              <div id="design-outcome" class="subgroup">
+                  <h4>Design Outcome</h4>
+              </div
+
+            </section>
+          </div>
+          <img class="img-responsive full-screen-img" src="../../assets/walker-design-outcome.jpg" alt="Design Outcome"><br><br>
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
+            <section class="group">
+              <div class="subgroup">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                  <p class="p-center-wrapper"><a href="#prototype-small" class="btn black-button" type="button" name="button">Jump to Prototype</button></a></p><br><br>
+                </div>
+              </div>
+
+
+              <!-- <div id="lessons-learned" class="subgroup">
+                  <h4>What I Learned</h4>
+                  <ul>
+                    <li>The user-centered design process</li>
+                    <li>Tools for UI design and prototyping</li>
+                    <li>How to work efficiently in an inter-disciplinary team</li>
+                  </ul>
+              </div> -->
+          </section>
+
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+          <section id="research" class="group">
+              <h3>Research</h3>
+              <hr>
+              <div class="subgroup">
+                  <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their children about personal finance. <span class="highlight">However, we pivoted based on our primary and secondary research, and focused on helping emerging adults aged between 18 and 25 form better financial habits.</span></p>
+              </div>
+              <div id="lit-review" class="subgroup">
+                  <h4>Literature Review</h4>
+                  <!-- <h4 class="large-quote">"Research shows that young American adults don't have adequate knowledge in personal finance, and need better guidance on managing their financial resources."</h4>
+                  <h6 class="large-quote-attribution">— Manton et al. (2011)</h6> -->
+                  <p>While most studies in the literature focused on evaluating the success of personal finance education curriculum in schools, data show that most young adults actually turn to their parents for advice when facing financial decision problems. <span class="highlight"><strong> The results motivated us to focus on parents in our following surveys and interviews to learn about their barriers when it comes to educating their children about personal finance.</strong></span> </p>
+              </div>
+              <div id="comp-analysis" class="subgroup">
+                  <h4>Competitive Analysis</h4>
+
+                  <p>We analyzed the following financial education products for children and financial management products for the general population.
+                  </p>
+
+                  <img class="img-responsive" src="../../assets/walker-comp-analysis-all.png" alt="competitive analysis"> <br><br><br>
+
+                  <p class="small-margin-bottom">We found that: </p>
+                  <ul>
+                    <li><strong>Existing personal finance education apps</strong> are either <strong>too childish for teenagers</strong> or <strong>too static to raise teenagers' interests</strong>.</li>
+                    <li><strong>Personal finance management apps</strong> focus on <strong>budgeting instead of spending wisely</strong>.</li>
+                  </ul>
+
+                  <p><strong>Few products target late adolescents</strong>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college. <strong>Therefore, we decided to narrow our user group down to late adolescents</strong>.</p>
+<!--
+                  <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#comp-analysis-details" class="btn black-button" name="button">See Detailed Analysis</button></p>
+
+                  <div class="collapse" id="comp-analysis-details">
+
+                    <img class="img-responsive full-img" src="../../assets/logos.png" alt="logos"><br><br>
+                    <p>
+                    <strong>Pennybox</strong>: The app enables children to complete chores and collect money from parents into their Pennybox account. Children can then track how much they have saved, spent, and how much more they can earn. Children can also request a cash out. The tool is great for younger children to learn about what it means to earn and save money through working; <strong>however, these concepts are too basic for teenagers who will soon need to manage a household and face real-world financial problems.</strong>
+                    </p>
+
+                    <p><strong>The Mint:</strong> The website provides learning materials for younger children, teenagers, parents and teachers on a variety of topics including earning, saving, owing, and investing. It provides quizzes and interactive games to teach basic financial concepts and gives children/teens hands-on practice in the virtual environment. <strong>However, the website is text-heavy and mostly non-interactive; the games only enable children/teens to practice basic activities like how to write a check, which are not interesting enough to keep them motivated.</strong></p>
+
+                    <p>
+                    <strong>PiggyBot:</strong> The app introduces children to the concept that managing money should have three parts: spending, sharing with others, and saving. It lets children set goals and take photos of those goals; it then shows them weekly how they are doing in terms of reaching their goals. This app permits parents to set up profiles for multiple children and keep all the records in one place. <strong>However, like Pennybox, the app can be over-childish for teenagers and cannot be used to educate them about more complicated financial concepts.</strong>
+                    </p>
+
+                  </div> -->
+
+              </div>
+              <div id="surveys" class="subgroup">
+                <h4>Surveys</h4>
+                <p>Because of our limited timeframe, we decided to deploy a survey as the first step of our primary research, because it is the fastest way to get a wide range of responses. <strong>Based on the findings from the literature review, we chose parents of teenage children as our participants</strong>. We hoped to understand what financial concepts parents hope their children learn before leaving home, whether they have attempted to educate their children about these concepts, and whether the process has been successful.</p>
+
+                <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey"> <br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#survey-details" class="btn black-button" name="button">See Detailed Survey Results</button></p>
+
+                <div class="collapse" id="survey-details">
+                  <p>Our main findings from the surveys are as follows: (observations here regarding "children" apply to teenage children and young adults)</p>
+
+                  <ul>
+                    <li><strong>Budgeting</strong>, <strong>staying out of debt</strong>, and <strong>price vs. value</strong> (knowing the difference between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
+
+                    <li>Managing one's own financial resources seems to be a <strong>distant topic</strong> for children before college.</li>
+
+                    <li>Children usually <strong>lack interests</strong> in learning about financial knowledge.</li>
+
+                    <li>Children in their early adolescence cannot understand certain personal finance knowledge.</li>
+
+                    <li>Parents <strong>lack tools</strong> in educating their children about personal finance.</li>
+                  </ul>
+
+                  <p class="small-margin-bottom">These results lead us to design tools that will:</p>
+
+                  <ul>
+                    <li><strong>Motivate children to learn about concepts that parents believe are the most important</strong>: budgeting, staying out of debt, and price vs. value.</li>
+                    <li><strong>Bring distant financial concepts closer to children</strong> to stimulate their interests in personal finance.</li>
+                  </ul>
+                </div>
+
+
+              </div>
+
+              <div id="interviews" class="subgroup">
+                <h4>Interviews & Affinity Mapping</h4>
+                <p>We conducted several semi-structured interviews with <strong>parents</strong> and <strong>financial experts</strong> to dive deeper into the problems parents encounter when educating their children about personal finance and gain advice from experts.<br><br>
+
+                We created an affinity map as a group to identify themes from our qualitative interview data.</p>
+
+                  <img class="img-responsive full-img" src="../../assets/walker-affinity-all.jpg" alt="">
+
+                <br><br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#interview-details" class="btn black-button" name="button">See Detailed Interview Results</button></p>
+
+                <div class="collapse" id="interview-details">
+                  <p class="small-margin-bottom">The main findings from the interviews include:
+                  </p>
+                  <ul>
+                    <li>Parents usually teach their children about personal finance through practical methods, like <strong>opening bank accounts for their children</strong> and <strong>letting them manage financial resources</strong>. These methods are considered effective. Some of the parents share financial knowledge during casual daily conversation too.</li>
+
+                    <li>Lots of parents mentioned that <strong>there is not enough tools for them to teach their children about personal finance</strong>.</li>
+
+                    <li>Some parents consider themselves <strong>inadequate in financial literacy</strong> and thus cannot really educate their children effectively.</li>
+                  </ul>
+
+                  <img class="img-responsive full-img"src="../../assets/walker-interview-notes.png" alt="interview notes"> <br><br>
+                  <p class="small-margin-bottom">In addition, our interviews with financial experts gave us some <strong>new insights</strong> that we were not aware of before:</p>
+
+                  <ul>
+                    <li>Not only teenagers, <strong>but also adults in their early 20s</strong> do not typically know how to manage their own financial resources.</li>
+
+                    <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <strong>However, most people, even adults, only have a vague idea about their financial own status</strong>.</li>
+
+                    <li>It is important to <strong>make distant financial concepts concrete</strong> for children in order for them to know their importance.</li>
+
+                    <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div id="key-takeaways" class="subgroup">
+                <h4>Key Takeaways</h4>
+                <p>Based on the survey & interview results, we realized that <strong>both pre-college teenagers and emerging adults aged between 18 and 25 have the need to learn to better manage their financial resources.</strong> Since we cannot narrow down our user group based on our evidence, instead of arbitrarily deciding on a group to focus on, we delineated the different needs for pre-college teenagers and emerging adults, and brainstormed ideas for both.</p>
+
+                <img class="img-responsive full-img"src="../../assets/walker-takeaways.png" alt="take aways">
+                <br><br><br>
+
+              </div>
+            </section>
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="design" class="group">
+              <h3>Design</h3>
+              <hr>
+
+              <div id="ideation" class="subgroup">
+                <h4>Ideation</h4>
+                <p>Based on the evidence we collected from user research, we conducted an <strong>informed brainstorming session</strong>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.</p>
+                <br>
+              </div>
+            </section>
+          </div>
+          <img class="img-responsive large-img" src="../../assets/walker-ideation.png" alt="Mind Map for Ideation">
+          <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12 col-centered fade-in main-content">
+            <section class="group">
+              <div class="subgroup">
+
+                <br><br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#ideation-process" class="btn black-button" name="button">See Detailed Ideation Process</button></p>
+
+                <div class="collapse" id="ideation-process">
+                  <p>
+                    We followed a roundtable “yes and” collaborative ideation process, in which we added on each other’s ideas to push them further for more details. We also voiced potential difficulties for the ideas on the list so that we can either further develop them and produce possible solutions, or eliminate them because of their low feasibility. <br><br>
+
+                    We then narrowed down our ideas by grouping similar ones into bigger themes. <strong>We also referred back to the main findings in our user research, to make sure that all the themes we identified can address at least one of the main concerns of our users.</strong>
+                  </p>
+                </div>
+                <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <strong>The first two concepts primarily address the need of emerging adults aged between 18 and 25, while the last two concepts target parents and their pre-college children.</strong></p>
+
+                <img class="img-reponsive full-img" src="../../assets/walker-concepts2.png" alt="concepts">
+                <br><br><br><br>
+
+
+
+              </div>
+
+              <div id="design-alt" class="subgroup">
+                <h4>Design Alternatives</h4>
+                <p class="small-margin-bottom">We first quickly sketched out our four ideas on paper and discussed the main functionalities in each concept.</p>
+                <img class="img-responsive full-img"src="../../assets/walker-sketches.png" alt="Sketches"> <br>
+                <p>After that, we created a usage scenario for each concept, and drew out wireframes for crucial screens that represent the essence of our ideas. <strong>We then showed the following concepts and scenarios to potential users, and asked them about their preferences and their feedback on our designs.</strong>
+                </p>
+                <h5>Concept 1</h5>
+                <p class="small-margin-bottom">Our first concept leverages push notifications to encourage users (emerging adults) to provide feedback to themselves over time. With the user's own input, the system can generate personalized financial advice for the user.</p>
+                <img class="img-responsive" src="../../assets/walker-concept-1.png" alt="Concept 1">
+                <br>
+                <br>
+                <h5>Concept 2</h5>
+                <p class="small-margin-bottom">Concept 2 enables users (emerging adults) to set long-term financial goals, and clearly visualize how their current saving/spending behaviors can influence these goals. It brings distant financial concepts closer to users and provides actionable suggestions on what users can do now to achieve their goals in the future.</p>
+                <img class="img-responsive" src="../../assets/walker-concept-2.png" alt="Concept 1">
+                <br>
+                <br>
+                <h5>Concept 3</h5>
+                <p class="small-margin-bottom">Our third concept provides a comprehensive, step-by-step guide for parents to discuss financial matters with their children. It includes actionable steps parents can follow to involve their children in major financial decisions in the family.</p>
+                <img class="img-responsive" src="../../assets/walker-concept-3.png" alt="Concept 1">
+                <br>
+                <br>
+                <h5>Concept 4</h5>
+                <p class="small-margin-bottom">Concept 4 aims at giving children a sense of agency by giving them a portion of the family's budget and letting them make spending decisions under the guidance of their parents. Parents will provide rewards depending on how well their children spend the money. </p>
+                <img class="img-responsive" src="../../assets/walker-concept-4.png" alt="Concept 1">
+                <br>
+              </div>
+
+              <div id="user-feedback" class="subgroup">
+                <h4>User Feedback & Design Implications</h4>
+
+                <p class="small-margin-bottom">After gathering feedback from 15 users, <strong>we decided to proceed with Concept 1 as our core concept, and incorporate the short-term financial status analysis feature from Concept 2 into our final design</strong>.</p><br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#concept-feedback-details" class="btn black-button" name="button">See Detailed User Feedback</button></p>
+
+                <div class="collapse" id="concept-feedback-details">
+                  <p>Most users preferred Concept 1 and Concept 2, which target emerging adults. For Concept 3 and Concept 4, participants believed that parents might not want to follow the instructions in the tool, and might want to carry out our supported tasks outside of our tool. Though the aim of these concepts is to provide a much-needed platform for parents to start conversations on personal finance with their children, most users cannot see it happening. <strong>Therefore, we decided to narrow our choices down to Concept 1 and Concept 2, and target emerging adults only.</strong></p>
+
+                  <p>Several participants also pointed out that <strong>visualizing one's future financial conditions based on current saving/spending behaviors might not make sense for emerging adults</strong>. People between 18 and 25 are generally in the process of choosing a field of study or exploring career opportunities; it's usually unclear to them how their financial conditions might change depending on their careers changes. <strong>As a result, Concept 2 might not seem appealing to emerging adults.</strong> However, participants did mention that having a short-term financial status analysis feature (with no long-term goal setting) is beneficial. Therefore, we incorporated the short-term financial status analysis feature into our final design.</p>
+                </div>
+
+                <p>We also derived several <strong>design implications</strong> from participants' feedback on Concept 1 and Concept 2. Here are some examples:</p>
+
+                <img class="img-responsive full-img"src="../../assets/walker-feedback-design.png" alt="Feedback and Design Implications"> <br><br>
+              </div>
+
+              <div id="info-arch" class="subgroup">
+                <h4>Information Architecture</h4>
+                <br>
+                <img class="img-responsive full-img"src="../../assets/walker-IA-group.JPG" alt="IA Design Process"> <br><br>
+
+                <p>With the design implications, we brainstormed the information architecture of our application individually, before meeting as a group and coming up with the following information architecture design:</p>
+
+                <img class="img-responsive full-img"src="../../assets/walker-info-arch.png" alt="Wireframes"> <br><br>
+              </div>
+
+
+
+              <div id="wireframes" class="subgroup">
+                <h4>Wireframes</h4>
+                <p>We created the following wireframes to make our ideas more concrete, and to make sure that the Information Architecture we derived make sense.</p>
+                <img class="img-responsive"src="../../assets/walker-wireframes.png" alt="Wireframes"> <br><br><br>
+              </div>
+
+              <div id="final-design" class="subgroup">
+                <h4>Final Design & User Flow</h4>
+                <img class="img-responsive" src="../../assets/walker-user-flow-1.png" alt="Concept 1">
+                <img class="img-responsive" src="../../assets/walker-user-flow-2.png" alt="Concept 1">
+                <img class="img-responsive" src="../../assets/walker-user-flow-3.png" alt="Concept 1">
+              </div>
+
+              <div id="prototype-small" class="subgroup">
+                <h4>Prototype</h4>
+                <p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="http://invis.io/7FEAWBZ23">here</a>.</p>
+                <iframe width="438" height="930" src="http://invis.io/7FEAWBZ23" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </section>
+
+            <div class="section-divider">
+              <div class="dot1">
+              </div>
+              <div class="dot2">
+              </div>
+              <div class="dot3">
+              </div>
+            </div>
+
+            <section id="evaluate" class="group">
+              <h3>Evaluate</h3>
+              <hr>
+
+              <div id="usability" class="subgroup">
+                <h4>Usability Testing</h4>
+                <p class="small-margin-bottom">The aims of our evaluation sessions are 1) to <strong>identify usability problems</strong> with our current design and 2) to <strong>assess the learnability</strong> of our application.</p><br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#usability-details" class="btn black-button" name="button">See Detailed Process</button></p>
+
+                <div class="collapse" id="usability-details">
+                  <p>To evaluate the usability of the system, we developed the following 4 tasks that cover all the main features we have in our application.</p>
+
+                  <img class="img-responsive full-img"src="../../assets/walker-tasks.png" alt="Tasks"><br><br>
+
+                  <p>After providing a high-level description of our application's core functionalities and letting users freely explore it for 2 minutes, <strong>we let users accomplish the 4 tasks one at a time while thinking aloud</strong>. We then let our users fill out a questionnaire asking their demographic information, their purchasing habits, and their subjective ratings of the usability of the app (adapted from the System Usability Scale, or SUS).<br><br>
+
+                  To measure the <strong>learnability</strong> of our app, we let our users accomplish the 4 tasks again after they fill out the questionnaire. Since the problem we are tackling through our design is complex, and our app inevitably introduces new concepts to our users, <strong>we don't expect our users to understand them immediately</strong>. <strong>However, we believe that our users should easily understand the core functionalities of our app after their first use</strong>. Therefore, we asked users to compare their experiences completing the tasks in the two rounds of testing.<br><br>
+
+                  Finally, we asked our users some general questions about their favorite and least favorite parts of the design, whether they understand the new concepts we brought in, etc.<br><br>
+                 </p>
+                </div>
+
+                <p>Users' subjective rating of the app indicated that even though the system is inherently complex, <strong>it is highly usable and learnable</strong>.<br><br>
+
+                For issues raised by multiple users, <strong>we derived the following design directions</strong>, grouped by tab.</p>
+
+               <img class="img-responsive full-img"src="../../assets/walker-issues-1.png" alt="Issues identified 1"><br><br>
+
+               <img class="img-responsive full-img"src="../../assets/walker-issues-2.png" alt="Issues identified 2"><br><br>
+
+               <img class="img-responsive full-img"src="../../assets/walker-issues-3.png" alt="Issues identified 3"><br><br>
+
+               <img class="img-responsive full-img"src="../../assets/walker-issues-4.png" alt="Issues identified 4"><br><br>
+
+              </div>
+              <div id="design-iterations" class="subgroup">
+                <h4>Design Iterations</h4>
+                <p><em>Our final design with the aforementioned changes will be available soon.</em> </p>
+              </div>
+
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="" id="template-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p><a href="../Portfolio.html#my-work" class="hvr-underline-from-left">All</a> / <a class="selected-footer"href="./financial-literacy.html">Mirror Mirror</a> / <a href="./mental-health.html" class="hvr-underline-from-left">Up & Up</a> / <a href="./REI-backpack.html" class="hvr-underline-from-left">REI Backpack Finder</a> / <a href="./CookFresh.html" class="hvr-underline-from-left">Cook Fresh</a></p>
+          <br>
+          <br>
+          <p>Copyright © Yanfeng Jin 2017</p>
+        </div>
+        <div class="footer-icons col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p><a href="https://www.linkedin.com/in/yanfeng-jin-tony-80533455/"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+          <a href="mailto:yjin@gatech.edu"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>
