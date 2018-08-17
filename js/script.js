@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   const mq = window.matchMedia( "(min-width: 991px)" );
+  AOS.init();
 
   // $(".highlight").each(function(){
   //       if ( $(this).isOnScreenHighlight() ) {
