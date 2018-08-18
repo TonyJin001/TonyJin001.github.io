@@ -525,7 +525,7 @@ i {
   }
 
   /*white navbar*/
-  .navbar-brand-white {
+  /* .navbar-brand-white {
     color: white !important;
     font-weight: 300;
     font-size: 1.5em;
@@ -541,7 +541,7 @@ i {
 
   .navbar-default .navbar-nav-white>li>a:focus, .navbar-default .navbar-nav-white>li>a:hover {
     color: white;
-  }
+  } */
 
 
 
