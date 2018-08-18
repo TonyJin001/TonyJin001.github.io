@@ -3,34 +3,37 @@ $(document).ready(function(){
   const mq = window.matchMedia( "(min-width: 991px)" );
   AOS.init();
 
-  // $(".highlight").each(function(){
-  //       if ( $(this).isOnScreenHighlight() ) {
-  //               console.log("#########");
-  //               $(this).addClass('shown');
-  //           } else {
-  //             console.log("noooooo");
-  //             $(this).removeClass('shown');
-  //       }
-  // });
+
+  $(".highlight-link").each(function(){
+        if ( $(this).isOnScreenHighlight() ) {
+              $(this).addClass('shown');
+            } else {
+              $(this).removeClass('shown');
+        }
+  });
 
   $(window).scroll(function(){
-    $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 250);
+    $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 20);
+
     $(".highlight").each(function(){
     	    if ( $(this).isOnScreenHighlight() ) {
             $(this).addClass('shown');
-                  // console.log("#########");
-                  // $(this).css({ "transform": "scaleX(1)"});
-                  // $(this).css({ "visibility": "visible"});
-                  // $(this).css({ "transform-origin": "left"});
-                  // $(this).css({ "transition": "0.2s transform cubic-bezier(0, 0.01, 0, 1)"});
     	        } else {
                 console.log("noooooo");
                   $(this).removeClass('shown');
-                // $(this).css({ "transform": "scaleX(0)"});
-                // $(this).css({ "visibility": "hidden"});
-                // $(this).css({ "transform-origin": "right"});
-                // $(this).css({ "transition": "0.2s transform cubic-bezier(0, 0.01, 0, 1)"});
     	    }
+    });
+
+    $(".highlight-link").each(function(){
+          if ( $(this).isOnScreenHighlight() ) {
+                  $(this).css("animation-delay","0s");
+                  console.log("#########");
+                  $(this).addClass('shown');
+              } else {
+                console.log("noooooo");
+                $(this).removeClass('shown');
+          }
     });
   });
 
