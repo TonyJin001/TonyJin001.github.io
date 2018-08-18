@@ -252,7 +252,8 @@ i {
   animation: bounce 2s ;
   animation-delay: 1s;
 }
-/* Portfolio Cards */
+
+/* Portfolio Card Grid Only*/
 
 .thumbnail-grid {
   margin: 4px 0 0 0;
@@ -272,61 +273,6 @@ i {
   display: table;
 }
 
-.card {
-  background: #FAFAFA;
-  box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
-  border-radius: 16px;
-  width: 450px;
-  height: 480px;
-  margin: auto;
-  position: relative;
-  -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-  -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-}
-
-.card:hover {
-  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
-  transform: translate(0px, -12px) !important;
-  transition-delay: 0s !important;
-  -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-  -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-  transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-}
-
-.card-pants {
-  text-align: left;
-  position: absolute;
-  top:67%;
-  margin-left: 36px;
-  margin-right: 36px;
-}
-
-.card-title {
-  /* portfolio-walker-thumbnail: */
-  /* Mirror Mirror: */
-  font-family: "Circular Std Black" !important;
-  font-size: 24px;
-  color: var(--primary-black);
-  margin-bottom: 8px;
-}
-
-.card-subtitle {
-  /* UX Design, UX Resear: */
-  font-family: "Circular Std Book" !important;
-  font-size: 14px;
-  color: var(--tertiary-black);
-  margin-bottom: 20px;
-}
-
-.card-content {
-  /* Cultivating Mindfuln: */
-  font-family: 'Fakt', sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  color: var(--primary-black);
-  line-height: 22px;
-}
 
 
 /**********************Side bar for navigation in portfolio pieces*******************8*/
@@ -544,7 +490,7 @@ i {
 @media only screen and (min-width: 991px) {
 
   body {
-    margin-top: 110px;
+    margin-top: 120px;
   }
 
   .navbar-default {
@@ -561,7 +507,7 @@ i {
   }
 
   .navbar-brand {
-    color: #3c3c3c !important;
+    color: var(--primary-black) !important;
     font-weight: 300;
     font-size: 1.5em;
     font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
@@ -608,119 +554,77 @@ i {
     font-size: 1.5vw;
   }
 
-  .jumbotron {
-    background: url('../assets/portfolio-bg-black.png') no-repeat center center;
-    background-size: cover;
-    /*position: relative;*/
-    height: 87vh;
-    color: black;
+  #tshape {
+    max-width: 450px;
+    height: auto;
+    opacity: 0.6;
+    margin-bottom: 24px;
+  }
 
-    overflow: hidden;
-    margin-top: -120px;
-    padding-top: 28vh;
-    padding-left: 10%;
-    /*padding-right: 20%;*/
+  .portfolio-title {
+    /* T for Tony, Your T-S: */
+    font-family: 'Circular Std Black' !important;
+    font-size: 36px;
+    color: var(--primary-black);
+    text-align: center;
+  }
+
+  /* Portfolio Cards Large Screen */
+
+  .card {
+    background: #FAFAFA;
+    box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
+    border-radius: 16px;
+    width: 450px;
+    height: 480px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card:hover {
+    box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+    transform: translate(0px, -12px) !important;
+    transition-delay: 0s !important;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card-pants {
+    text-align: left;
+    position: absolute;
+    top:67%;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .card-title {
+    /* portfolio-walker-thumbnail: */
+    /* Mirror Mirror: */
+    font-family: "Circular Std Black" !important;
+    font-size: 24px;
+    color: var(--primary-black);
+    margin-bottom: 8px;
+  }
+
+  .card-subtitle {
+    /* UX Design, UX Resear: */
+    font-family: "Circular Std Book" !important;
+    font-size: 14px;
+    color: var(--tertiary-black);
     margin-bottom: 20px;
   }
 
-  .jumbotron h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 4.5em;
-    color: white;
-    opacity: 1;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .jumbotron p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
-    color: white;
-    opacity: 1;
-    padding-left: 18px;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-
-
-  .white-button1 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 15px 30px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 1.3em;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 15px 30px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 1.3em;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button1:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 15px 30px;
-    background: linear-gradient(to bottom right, #9168d2, #4979fb);
-    background-color: transparent;
-    color:white;
-    font-size: 1.3em;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 15px 30px;
-    background: linear-gradient(to bottom right, #f65550, #ffe451);
-    background-color: transparent;
-    color:white;
-    font-size: 1.3em;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-
-
-  .large-img {
-    width:75%;
-    margin-left:12.5%;
+  .card-content {
+    /* Cultivating Mindfuln: */
+    font-family: 'Fakt', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: var(--primary-black);
+    line-height: 22px;
   }
 
   .thumbnail-grid li {
@@ -728,6 +632,12 @@ i {
     height: 500px;
     display: inline-block;
     margin: 15px;
+  }
+
+
+  .large-img {
+      width:75%;
+      margin-left:12.5%;
   }
 
   .subgroup-left-side p {
@@ -794,22 +704,23 @@ i {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   body {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 
 
   .navbar-default {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    background-color: white;
+    font-family: 'Fakt', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #FAFAFA;
     /*opacity: 0.9;*/
-    padding: 10px 40px 10px 40px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 8px 40px 8px 40px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.14);
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
   }
 
   .navbar-brand {
-    color: #3c3c3c !important;
+    color: var(--primary-black) !important;
     font-weight: 400;
     font-size: 1.5em;
     font-family: 'Carolina Mountains', 'Lato', sans-serif !important;
@@ -817,7 +728,7 @@ i {
 
   .navbar-default .navbar-nav>li>a {
     color: var(--primary-black);
-    font-weight: 300;
+    font-weight: 200;
     padding: 0px 0px 10px 0px;
     margin: 15px 15px 0px 15px;
   }
@@ -834,111 +745,6 @@ i {
     text-align: center;
     color: black;
     font-size: 2vw;
-  }
-
-  .jumbotron {
-    background: url('../assets/portfolio-bg-black.png') no-repeat center center;
-    background-size: cover;
-    /*position: relative;*/
-    height: 600px;
-    color: black;
-
-    overflow: hidden;
-    padding-top: 200px;
-    padding-left: 5%;
-    /*padding-right: 20%;*/
-    margin-bottom: 20px;
-  }
-
-  .jumbotron h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 5vw;
-    color: white;
-    opacity: 1;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .jumbotron p {
-    font-family: 'Lato', sans-serif;
-    font-size: 2vw;
-    color: white;
-    opacity: 1;
-    padding-left: 17px;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button1 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 12px 30px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 1.5vw;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 3.5px;
-    margin-right: 10px;
-    padding: 12px 30px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 1.5vw;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button1:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 12px 30px;
-    background: linear-gradient(to bottom right, #9168d2, #4979fb);
-    background-color: transparent;
-    color:white;
-    font-size: 1.5vw;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 3.5px;
-    margin-right: 10px;
-    padding: 12px 30px;
-    background: linear-gradient(to bottom right, #f65550, #ffe451);
-    background-color: transparent;
-    color:white;
-    font-size: 1.5vw;
-    font-weight: 400;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
   }
 
 
@@ -959,7 +765,7 @@ i {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #3c3c3c;
+    background: var(--primary-black);
     height: 1px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -976,12 +782,92 @@ i {
     width:100%;
   }
 
+  #tshape {
+    max-width: 450px;
+    height: auto;
+    opacity: 0.6;
+    margin-bottom: 24px;
+  }
+
+  .portfolio-title {
+    /* T for Tony, Your T-S: */
+    font-family: 'Circular Std Black' !important;
+    font-size: 28px;
+    color: var(--primary-black);
+    text-align: center;
+  }
+
+  /* Portfolio Cards Medium Screen */
+
+  .card {
+    background: #FAFAFA;
+    box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
+    border-radius: 16px;
+    width: 320px;
+    height: 360px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card:hover {
+    box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+    transform: translate(0px, -12px) !important;
+    transition-delay: 0s !important;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card-pants {
+    text-align: left;
+    position: absolute;
+    top:64%;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .card-title {
+    /* portfolio-walker-thumbnail: */
+    /* Mirror Mirror: */
+    font-family: "Circular Std Black" !important;
+    font-size: 20px;
+    color: var(--primary-black);
+    margin-bottom: 4px;
+  }
+
+  .card-subtitle {
+    /* UX Design, UX Resear: */
+    font-family: "Circular Std Book" !important;
+    font-size: 12px;
+    color: var(--tertiary-black);
+    margin-bottom: 16px;
+  }
+
+  .card-content {
+    /* Cultivating Mindfuln: */
+    font-family: 'Fakt', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--primary-black);
+    line-height: 20px;
+  }
+
   .thumbnail-grid li {
+    width: 320px;
+    height: 360px;
+    display: inline-block;
+    margin: 15px;
+  }
+
+  /* .thumbnail-grid li {
     width: 45%;
     height: 45%;
     display: inline-block;
     margin: 15px;
-  }
+  } */
 
 
 
@@ -1017,38 +903,11 @@ i {
     padding-left: 0px;
     padding-right: 0px;
   }
-
-  /*.md-sm-xs-col-centered{
-    float: none;
-    margin: 0 auto;
-  }
-
-  .img-no-left-right-padding {
-    padding: 10px 30px 10px 0px;
-    max-width: 364px;
-  }*/
-/*
-  #jumbo-bg {
-      position: absolute;
-      left: 0;
-      top: -15%;
-      width: 100%;
-      height: auto;
-      opacity: 0.2;
-      overflow: hidden;
-  }*/
 }
 
 /*Everything larger than medium*/
 @media only screen and (min-width: 768px) {
 
-  .portfolio-title {
-    /* T for Tony, Your T-S: */
-    font-family: 'Circular Std Black' !important;
-    font-size: 36px;
-    color: var(--primary-black);
-    text-align: center;
-  }
 
 
   .portfolio-row {
@@ -1061,7 +920,6 @@ i {
     position: relative;
     z-index: 0;
   }
-
 
   .main-content {
     padding: 0px 20px 20px 40px;
@@ -1183,18 +1041,25 @@ i {
 /*Mobile screen*/
 @media only screen and (max-width: 767px) {
 
+  body {
+    margin-top: 120px;
+  }
+
   .xs-hidden-manual {
     display:none;
   }
 
+
+
   .navbar-default {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-    background-color: white;
+    font-family: 'Fakt', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #FAFAFA;
     /*opacity: 0.9;*/
-    padding: 10px 5px 10px 5px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.14);
+    /* border-bottom: 1px solid rgba(0,0,0,0.1); */
   }
 
   .navbar-brand {
@@ -1213,110 +1078,6 @@ i {
     color: var(--primary-black);
   }
 
-  .jumbotron {
-    background: url('../assets/portfolio-bg-black.png') no-repeat center center;
-    background-size: cover;
-    /*position: relative;*/
-    height: 300px;
-    color: black;
-
-    overflow: hidden;
-    padding-top: 60px;
-    padding-left: 5%;
-    /*padding-right: 20%;*/
-    margin-bottom: 20px;
-  }
-
-  .jumbotron h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 6vw;
-    color: white;
-    opacity: 1;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .jumbotron p {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8em;
-    color: white;
-    opacity: 1;
-    padding-left: 16px;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button1 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 8px 20px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 2vw;
-    font-weight: 300;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2 {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 1.5px;
-    margin-right: 10px;
-    padding: 8px 20px;
-    background: transparent;
-    background-color: transparent;
-    color:white;
-    font-size: 2vw;
-    font-weight: 300;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button1:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    padding: 8px 20px;
-    background: linear-gradient(to bottom right, #9168d2, #4979fb);
-    background-color: transparent;
-    color:white;
-    font-size: 2vw;
-    font-weight: 300;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
-
-  .white-button2:hover {
-    border-width: 1px;
-    border-radius: 0px;
-    border-color: white;
-    margin-top: 10px;
-    margin-left: 1.5px;
-    margin-right: 10px;
-    padding: 8px 20px;
-    background: linear-gradient(to bottom right, #f65550, #ffe451);
-    background-color: transparent;
-    color:white;
-    font-size: 2vw;
-    font-weight: 300;
-    font-family: 'lato' sans-serif !important;
-    transition: .3s;
-    -webkit-transition: .3s;
-  }
 
   .portfolio-row {
     padding: 0px 10px 20px 10px;
@@ -1329,9 +1090,84 @@ i {
     z-index: 0;
   }
 
+  #tshape {
+    max-width: 320px;
+    height: auto;
+    opacity: 0.6;
+    margin-bottom: 16px;
+  }
 
-  body {
-    margin-top: 70px;
+  .portfolio-title {
+    /* T for Tony, Your T-S: */
+    font-family: 'Circular Std Black' !important;
+    font-size: 24px;
+    color: var(--primary-black);
+    text-align: center;
+  }
+
+  /* Portfolio Cards Medium Screen */
+
+  .card {
+    background: #FAFAFA;
+    box-shadow: 0 2px 44px 0 rgba(0,0,0,0.14);
+    border-radius: 16px;
+    width: 320px;
+    height: 360px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card:hover {
+    box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+    transform: translate(0px, -12px) !important;
+    transition-delay: 0s !important;
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+  }
+
+  .card-pants {
+    text-align: left;
+    position: absolute;
+    top:64%;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  .card-title {
+    /* portfolio-walker-thumbnail: */
+    /* Mirror Mirror: */
+    font-family: "Circular Std Black" !important;
+    font-size: 20px;
+    color: var(--primary-black);
+    margin-bottom: 4px;
+  }
+
+  .card-subtitle {
+    /* UX Design, UX Resear: */
+    font-family: "Circular Std Book" !important;
+    font-size: 12px;
+    color: var(--tertiary-black);
+    margin-bottom: 16px;
+  }
+
+  .card-content {
+    /* Cultivating Mindfuln: */
+    font-family: 'Fakt', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--primary-black);
+    line-height: 20px;
+  }
+
+  .thumbnail-grid li {
+    width: 320px;
+    height: 360px;
+    display: inline-block;
+    margin: 15px;
   }
 
   .captions h3 {
@@ -1489,13 +1325,6 @@ i {
     right: 0;
   }
 
-  .thumbnail-grid li {
-    width: 90%;
-    height: 90%;
-    display: inline-block;
-    margin: 20px;
-  }
-
   #prototype-small {
     position: relative;
     padding-bottom: 160%;
@@ -1650,11 +1479,4 @@ h5 {
   position:fixed;
   z-index: 1;
   width:220px;
-}
-
-#tshape {
-  max-width: 450px;
-  height: auto;
-  opacity: 0.6;
-  margin-bottom: 40px;
 }
