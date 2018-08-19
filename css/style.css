@@ -901,7 +901,7 @@ i {
 @media only screen and (max-width: 767px) {
 
   body {
-    margin-top: 120px;
+    margin-top: 80px;
   }
 
   .xs-hidden-manual {
@@ -948,6 +948,7 @@ i {
     max-width: 320px;
     height: auto;
     opacity: 0.6;
+    margin-top: 40px;
     margin-bottom: 16px;
   }
 
@@ -1120,6 +1121,10 @@ i {
   .subgroup-left-side {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  strong {
+    font-weight: 500;
   }
 
   .black-button {
