@@ -36,7 +36,6 @@ hr {
 
 .p-center-wrapper {
   text-align: center;
-  font-family: "Lato", sans-serif !important;
   font-weight: 400;
 }
 
@@ -1072,7 +1071,7 @@ i {
   .subgroup p {
     font-family: 'Fakt', sans-serif;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
     color: var(--primary-black);
@@ -1081,7 +1080,7 @@ i {
   .subgroup ul {
     font-family: 'Fakt', sans-serif;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
     color: var(--primary-black);
@@ -1090,7 +1089,7 @@ i {
   .subgroup-left-side p {
     font-family: 'Fakt', sans-serif;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
     color: var(--primary-black);
@@ -1099,7 +1098,7 @@ i {
   .subgroup-right-side p {
     font-family: 'Fakt', sans-serif;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 24px;
     color: var(--primary-black);
   }
