@@ -2,7 +2,11 @@
     --primary-black: #555555;
     --secondary-black: #868686;
     --tertiary-black: #aaaaaa;
-    --green: #9EEBCF;
+    --primary-text: #111111;
+
+    --highlight-walker: #5AD1FF60;
+    --highlight-up: #58CCD560;
+    --highlight-REI: #FABB5460;
 }
 
 
@@ -124,9 +128,9 @@ hr {
 }
 
 /* Highlight Text & Animation*/
+
 .highlight {
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #9EEBCF60 50%);
   background-origin: 0;
   background-size: 200% 100%;
   background-repeat: repeat-x;
@@ -137,12 +141,35 @@ hr {
 
 .highlight.shown {
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #9EEBCF60 50%);
   background-origin: 0;
   background-size: 200% 100%;
   background-repeat: repeat-x;
   background-position: -100% 100%;
   transition: background-position 0.8s ease-out;
+}
+
+.highlight-walker {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-walker) 50%);
+}
+
+.highlight-walker.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-walker) 50%);
+}
+
+.highlight-up {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-up) 50%);
+}
+
+.highlight-up.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-up) 50%);
+}
+
+.highlight-REI {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-REI) 50%);
+}
+
+.highlight-REI.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-REI) 50%);
 }
 
 .highlight-link {
@@ -540,7 +567,7 @@ i {
     font-weight: 200;
     line-height: 28px;
     margin-bottom: 48px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup-right-side p {
@@ -548,7 +575,7 @@ i {
     font-size: 14px;
     font-weight: 200;
     margin-bottom: 32px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup-left-side h4 {
@@ -826,7 +853,7 @@ i {
     font-weight: 200;
     line-height: 30px;
     margin-bottom: 48px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup ul {
@@ -835,7 +862,7 @@ i {
     font-weight: 200;
     line-height: 24px;
     margin-bottom: 48px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .black-button {
@@ -1086,7 +1113,7 @@ i {
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup ul {
@@ -1095,7 +1122,7 @@ i {
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup-left-side p {
@@ -1104,7 +1131,7 @@ i {
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 28px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup-right-side p {
@@ -1112,7 +1139,7 @@ i {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 24px;
-    color: var(--primary-black);
+    color: var(--primary-text);
   }
 
   .subgroup-left-side h4 {
