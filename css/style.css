@@ -181,8 +181,6 @@ hr {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-cook-fresh) 50%);
 }
 
---highlight-cook-fresh
-
 .highlight-link {
   position: relative;
   background-image: linear-gradient(to right, transparent 50%, #9EEBCF 50%);
