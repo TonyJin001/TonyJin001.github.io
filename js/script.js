@@ -31,7 +31,12 @@ $(document).ready(function(){
   $( window ).on( "load", function() {
     preloaderFadeOutTime = 500;
     var preloader = $('.spinner-wrapper');
-    preloader.fadeOut(preloaderFadeOutTime);
+    preloader.animate({
+      up:'40px',
+      opacity:0
+    },preloaderFadeOutTime);
+    preloader.css("visibility","hidden"); 
+    // fadeOut(preloaderFadeOutTime);
     AOS.init();
   });
 
