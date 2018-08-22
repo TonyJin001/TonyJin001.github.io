@@ -35,7 +35,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../assets/icon-tab.ico">
 
     <script src="https://use.fontawesome.com/a891bb0a11.js"></script>
-    <script src="../js/script.js" charset="utf-8"></script>
+    <script src="../js/script-final.js" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript">
@@ -45,6 +45,24 @@
   </head>
 
   <body>
+
+    <div class="spinner-wrapper">
+      <div class="p-center-wrapper">
+        <div class="la-line-scale la-dark">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <h4 id="preloader-title"></h4>
+            <h5 id="preloader-content"></h5>
+        </div>
+
+      </div>
+
+    </div>
+
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-id">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsible-nav">
@@ -53,13 +71,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="Portfolio.html">Tony Jin</a>
+        <a class="navbar-brand" href="home.html">Tony Jin</a>
       </div>
       <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
         <ul class="nav navbar-nav">
           <li><a class="selected hvr-underline-from-left" href="#my-work">Projects</a></li>
           <li><a class="hvr-underline-from-left" href="../assets/Yanfeng-Jin-Resume-v5.pdf">Resume</a></li>
-          <li><a class="hvr-underline-from-left" href="About.html">About Me</a></li>
+          <li><a class="hvr-underline-from-left" href="about-me.html">About Me</a></li>
         </ul>
       </div>
     </nav>
@@ -83,7 +101,7 @@
 
     <div class="container-fluid col-centered" id="my-work">
       <ul class="thumbnail-grid">
-        <a href="./Works/financial-literacy.html">
+        <a href="./works/mirror-mirror.html">
           <li data-aos="fade-up" data-aos-duration="600">
             <div class="card" style="background-image: url(../assets/portfolio-walker-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
@@ -101,7 +119,7 @@
           </li>
         </a>
 
-        <a href="./Works/mental-health.html">
+        <a href="./works/up-up.html">
           <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <div class="card"  style="background-image: url(../assets/portfolio-up-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
@@ -119,7 +137,7 @@
           </li>
         </a>
 
-        <a href="./Works/REI-backpack.html">
+        <a href="./works/rei-backpack.html">
           <li data-aos="fade-up" data-aos-duration="600">
             <div class="card"  style="background-image: url(../assets/portfolio-REI-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">
@@ -137,7 +155,7 @@
           </li>
         </a>
 
-        <a href="./Works/CookFresh.html">
+        <a href="./works/cook-fresh.html">
           <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
             <div class="card"  style="background-image: url(../assets/portfolio-CookFresh-thumbnail.png); background-size: contain; background-repeat: no-repeat;">
               <div class="card-pants">

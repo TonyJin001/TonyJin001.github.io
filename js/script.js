@@ -1,8 +1,39 @@
 $(document).ready(function(){
 
   const mq = window.matchMedia( "(min-width: 991px)" );
-  AOS.init();
+  const funFacts = [
+    "I have an insatiable desire to learn new things.",
+    "I love learning about all the latest technologies and exploring design possibilities.",
+    "I love thinking on an abstract level.",
+    "I play guitar and electronic piano.",
+    "I'm setting up a home recording studio to record songs and upload them to Youtube. Stay tuned!",
+    "I'm a huge fan of broadway musicals. My favorites include Dear Evan Hansen, RENT, and Hamilton.",
+    "I played the role of a drug dealer, a homeless man, an AIDS patient, and a business man in a college production of the musical RENT.",
+    "I performed with my college choir in Germany, Czech Republic, and Austria.",
+    "I've sung songs in English, Chinese, French, Spanish, German, Czech, Hebrew, Italian, Russian, Ukrainian, Japanese, Arabic, Finnish, and Latin. Czech was the hardest!",
+    "I am a amateur <a href='https://photos.google.com/share/AF1QipNq88AUSSS3t5j1EPqC-zObzEAT9gjVjWI4KVkKX8vOpXrOnOZpPkMFpoZfmn6okg?key=LVR5MUNEbUI3ZDhqZ1Uzckt3Njl1ZXc1dk9MSXp3' target='_blank'>photographer</a>.",
+    "I love darkroom photography.",
+    "I do <a href='https://youtu.be/hhN3uhVHzvg?t=15m42s' target='_blank'>Swing Dance!</a>",
+    "Check out my <a href='https://youtu.be/4zHSYzWrSJI?t=55m55s' target='_blank'>K-Pop performance</a>!",
+    "My college application essay was published on <a href='https://cn.nytimes.com/education/20151216/t16essaycontest-tonyjin/en-us/' target='_blank'>The New York Times Chinese website</a>.",
+    "I moved from an 8 million people city in China to a small town with 8,000 people in rural Vermont. And I loved it!",
+    "I lived in Paris for six months.",
+    "I speak fluent Chinese and French!",
+    "I was an Oratory Coach during my freshman year in college.",
+    "My favorite directors include Richard Linklater and Christopher Nolan.",
+    "I am interested in Daoism and Buddhism."
+  ];
 
+  var randomFactIndex = Math.floor(Math.random() * funFacts.length);
+  $('#preloader-title').text("Tony's Fun Fact #"+(randomFactIndex+1));
+  $('#preloader-content').html(funFacts[randomFactIndex]);
+
+  $( window ).on( "load", function() {
+    preloaderFadeOutTime = 500;
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    AOS.init();
+  });
 
   $(".highlight-link").each(function(){
         if ( $(this).isOnScreenHighlight() ) {
@@ -101,7 +132,7 @@ $(document).ready(function(){
 
 
     // if (mq.matches) {
-    //   if (window.location.pathname === '/html/Portfolio.html'){
+    //   if (window.location.pathname === '/html/home.html'){
     //     console.log('yes');
     //     if ($(this).scrollTop() > ($(window).height()*0.87-65)) {
     //       $('.navbar-nav-white').removeClass('navbar-nav-white');
@@ -137,7 +168,7 @@ $(document).ready(function(){
       return false;
     });
 
-    $('.fade-in').addClass('load');
+    // $('.').addClass('load');
 
 
     $(".p-center-wrapper button[data-toggle='collapse']").click (function () {
@@ -153,15 +184,9 @@ $(document).ready(function(){
         return newString;
       });
     })
-
-
-
-
-
-
-
-
 });
+
+
 
 $.fn.isOnScreenHighlight = function(){
 
