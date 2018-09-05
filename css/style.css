@@ -7,7 +7,8 @@
     --highlight-walker: #5AD1FF60;
     --highlight-up: #58CCD560;
     --highlight-REI: #FABB5460;
-    --highlight-cook-fresh: #FFD53960;
+    --highlight-cook-fresh: #CFEB6860;
+    --highlight-THD: #FF772040;
 }
 
 
@@ -372,6 +373,14 @@ hr {
 
 .highlight-cook-fresh.shown {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-cook-fresh) 50%);
+}
+
+.highlight-THD {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-THD) 50%);
+}
+
+.highlight-THD.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-THD) 50%);
 }
 
 .highlight-link {
