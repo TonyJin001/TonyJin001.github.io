@@ -35,7 +35,7 @@ $(document).ready(function(){
       up:'40px',
       opacity:0
     },preloaderFadeOutTime);
-    preloader.css("visibility","hidden"); 
+    preloader.css("visibility","hidden");
     // fadeOut(preloaderFadeOutTime);
     AOS.init();
   });
@@ -48,7 +48,14 @@ $(document).ready(function(){
         }
   });
 
+  var jumboHeight = $('.jumbotron').outerHeight();
+
   $(window).scroll(function(){
+
+    var scrolled = $(window).scrollTop();
+    console.log("Scrolled: "+scrolled);
+    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+
     $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 20);
 
@@ -56,7 +63,6 @@ $(document).ready(function(){
     	    if ( $(this).isOnScreenHighlight() ) {
             $(this).addClass('shown');
     	        } else {
-                console.log("noooooo");
                   $(this).removeClass('shown');
     	    }
     });
@@ -64,10 +70,8 @@ $(document).ready(function(){
     $(".highlight-link").each(function(){
           if ( $(this).isOnScreenHighlight() ) {
                   $(this).css("animation-delay","0s");
-                  console.log("#########");
                   $(this).addClass('shown');
               } else {
-                console.log("noooooo");
                 $(this).removeClass('shown');
           }
     });

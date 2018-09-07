@@ -45,6 +45,74 @@ hr {
   font-weight: 400;
 }
 
+.bg {
+
+  position: fixed;
+  width: 100%;
+  height: 100vh; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.bg-eatxplore {
+  background: url('../assets/eatxplore-jumbotron.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.bg-walker {
+  background: url('../assets/walker-jumbotron.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.bg-up {
+  background: url('../assets/up-jumbotron.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.bg-REI {
+  background: url('../assets/REI-jumbotron.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.jumbotron {
+  height: 100vh;
+  color: var(--primary-black);
+  background:transparent;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron h1 {
+  font-family: 'Circular Std Medium' !important;
+  font-size: 40px;
+  color: var(--primary-black);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.jumbotron p {
+  font-family: 'Fakt', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 32px;
+  color: var(--secondary-black);
+  text-align: center;
+}
+
+.first-section {
+  margin-top: -120px !important;
+}
+
 
 
 /* Fade in Animation */
@@ -1038,10 +1106,12 @@ i {
 
   .group h3 {
     font-family: 'Circular Std Bold';
-    font-size: 32px;
+    font-size: 24px;
     color: var(--primary-black);
     margin-bottom: 25px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .subgroup h4 {
