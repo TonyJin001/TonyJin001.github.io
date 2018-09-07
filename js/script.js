@@ -52,9 +52,9 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
 
-    var scrolled = $(window).scrollTop();
-    console.log("Scrolled: "+scrolled);
-    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+    // var scrolled = $(window).scrollTop();
+    // console.log("Scrolled: "+scrolled);
+    // $('.bg').css('height', (jumboHeight-scrolled) + 'px');
 
     $(".scroll-disappear").css("opacity", 1 - $(window).scrollTop() / 500);
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 20);
