@@ -28,6 +28,9 @@ $(document).ready(function(){
   $('#preloader-title').text("Tony's Fun Fact #"+(randomFactIndex+1));
   $('#preloader-content').html(funFacts[randomFactIndex]);
 
+  // $('#template-to-top').setAttribute("data-aos","fade-up");
+  // $('#template-to-top').setAttribute("data-aos-duration","600");
+
   $( window ).on( "load", function() {
     preloaderFadeOutTime = 500;
     var preloader = $('.spinner-wrapper');
@@ -108,6 +111,12 @@ $(document).ready(function(){
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('#template-to-top').fadeIn();
+      // $('#template-to-top').attr("data-aos","fade-up");
+      // $('#template-to-top').attr("data-aos-duration","600");
+
+
+
+      // data-aos="fade-up" data-aos-duration="600"
     } else {
       $('#template-to-top').fadeOut();
     }
