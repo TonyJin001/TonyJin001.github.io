@@ -88,12 +88,12 @@ $(document).ready(function(){
     offset: 40
   });
 
-  $("img[class*=\"img-responsive\"]").each(function(index,element) {
-    console.log($(element).attr('class'));
-    if ($(element).attr('class')!= 'img-responsive full-screen-img') {
-      $(element).attr("data-action","zoom");
-    }
-  });
+  // $("img[class*=\"img-responsive\"]").each(function(index,element) {
+  //   console.log($(element).attr('class'));
+  //   if ($(element).attr('class')!= 'img-responsive full-screen-img') {
+  //     $(element).attr("data-action","zoom");
+  //   }
+  // });
 
   $('#template-to-top').hide();
   $(".bs-docs-sidebar").hide();

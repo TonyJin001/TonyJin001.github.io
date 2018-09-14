@@ -9,6 +9,8 @@
     --highlight-REI: #FABB5460;
     --highlight-cook-fresh: #CFEB6860;
     --highlight-THD: #F9890260;
+
+    --THD-color:#F96302;
 }
 
 
@@ -481,6 +483,19 @@ position: absolute;
   background-position: -100% 80%;
   transition: background-position 0.8s ease-out;
   transition-delay: 0.5s;
+}
+
+.THD-h5 {
+  border-left: 6px solid var(--THD-color);
+  padding-left: 28px;
+}
+
+.img-caption {
+
+  text-align: center;
+  font-size: 12px !important;
+  font-weight: 100 !important;
+  font-style: italic;
 }
 
 
@@ -1210,7 +1225,7 @@ i {
   }
 
   .footer-icons i {
-    padding: 3px 12px 0px 12px;
+    padding: 12px 12px 0px 12px;
   }
 
   iframe {
@@ -1526,7 +1541,7 @@ i {
   }
 
   .footer-icons i {
-    padding: 3px 12px 0px 12px;
+    padding: 12px 12px 0px 12px;
   }
 
   .large-img {
