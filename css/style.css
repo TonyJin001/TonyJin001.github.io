@@ -394,6 +394,7 @@ position: absolute;
 .full-img {
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 
 /* Image that spans the whole screen */
