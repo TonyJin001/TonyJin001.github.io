@@ -9,8 +9,10 @@
     --highlight-REI: #FABB5460;
     --highlight-cook-fresh: #CFEB6860;
     --highlight-THD: #FDAA7560;
+    --highlight-eatxplore: #F9CB4260;
 
     --THD-color:#F96302;
+    --eatxplore-color:#F9CB42;
 }
 
 
@@ -463,6 +465,14 @@ position: absolute;
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-THD) 50%);
 }
 
+.highlight-eatxplore {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-eatxplore) 50%);
+}
+
+.highlight-eatxplore.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-eatxplore) 50%);
+}
+
 .highlight-link {
   position: relative;
   background-image: linear-gradient(to right, transparent 50%, #9EEBCF 50%);
@@ -488,6 +498,11 @@ position: absolute;
 
 .THD-h5 {
   border-left: 6px solid var(--THD-color);
+  padding-left: 28px;
+}
+
+.eatxplore-h5 {
+  border-left: 6px solid var(--eatxplore-color);
   padding-left: 28px;
 }
 
