@@ -13,6 +13,7 @@
 
     --THD-color:#F96302;
     --eatxplore-color:#F9CB42;
+    --walker-color:#5AD1FF;
 }
 
 
@@ -503,6 +504,11 @@ position: absolute;
 
 .eatxplore-h5 {
   border-left: 6px solid var(--eatxplore-color);
+  padding-left: 28px;
+}
+
+.walker-h5 {
+  border-left: 6px solid var(--walker-color);
   padding-left: 28px;
 }
 
