@@ -4,6 +4,8 @@
     --tertiary-black: #aaaaaa;
     --primary-text: #111111;
 
+
+    --highlight-main: #9EEBCF;
     --highlight-walker: #5AD1FF60;
     --highlight-up: #58CCD560;
     --highlight-REI: #FABB5460;
@@ -14,6 +16,7 @@
     --THD-color:#F96302;
     --eatxplore-color:#F9CB42;
     --walker-color:#5AD1FF;
+    --about-color: #44DCC4;
 }
 
 
@@ -476,7 +479,7 @@ position: absolute;
 
 .highlight-link {
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #9EEBCF 50%);
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-main) 50%);
   background-origin: 0;
   background-size: 200% 30%;
   background-repeat: repeat-x;
@@ -488,7 +491,7 @@ position: absolute;
 
 .highlight-link.shown {
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #9EEBCF 50%);
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-main) 50%);
   background-origin: 0;
   background-size: 200% 30%;
   background-repeat: repeat-x;
@@ -509,6 +512,11 @@ position: absolute;
 
 .walker-h5 {
   border-left: 6px solid var(--walker-color);
+  padding-left: 28px;
+}
+
+.about-h5 {
+  border-left: 6px solid var(--highlight-main);
   padding-left: 28px;
 }
 
@@ -1242,6 +1250,21 @@ i {
     text-align: center;
   }
 
+  .footer-text {
+    font-family: 'Fakt';
+    font-weight: 100;
+    color: var(--primary-black);
+    text-align: center;
+  }
+
+  .footer-text-small {
+    font-family: 'Fakt';
+    font-weight: 100;
+    color: var(--primary-black);
+    text-align: center;
+    font-size: 10px;
+  }
+
   .footer-icons p {
     text-align: center;
   }
@@ -1663,18 +1686,24 @@ i {
 
 h2 {
   margin-top: 0px;
+  margin-bottom: 16px;
   font-family: 'Circular Std Medium', sans-serif;
   font-size: 38px;
   font-weight: 400;
   color: var(--primary-black);
 }
 
-h5 {
+h6 {
   margin-top: 0px;
   font-family: 'Fakt', sans-serif;
   font-size: 18px;
-  font-weight: 100;
-  color: var(--primary-black);
+  font-weight: 200;
+  color: var(--secondary-black);
+}
+
+.h6-T {
+  /* font-weight: 300; */
+
 }
 
 .quote {
