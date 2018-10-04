@@ -208,7 +208,7 @@ $(document).ready(function(){
 
 $.fn.isOnScreenHighlight = function(){
 
-  var fix = parseInt($(".navbar").css("height"));
+  // var fix = parseInt($(".navbar").css("height"));
   var win = $(window);
 
   var viewport = {
