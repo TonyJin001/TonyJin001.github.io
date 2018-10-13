@@ -1700,9 +1700,9 @@ i {
 
 h2 {
   margin-top: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-family: 'Circular Std Medium', sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 400;
   color: var(--primary-black);
 }
@@ -1711,13 +1711,13 @@ h6 {
   margin-top: 0px;
   font-family: 'Fakt', sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   color: var(--secondary-black);
 }
 
 .h6-T {
-  /* font-weight: 300; */
-
+  /* font-weight: 400;
+  font-size: 22px; */
 }
 
 .quote {
