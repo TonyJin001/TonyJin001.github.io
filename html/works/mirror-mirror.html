@@ -78,7 +78,7 @@
       <div class="collapse navbar-collapse navbar-right" id="collapsible-nav">
         <ul class="nav navbar-nav">
           <li><a class="selected hvr-underline-from-left" href="../home.html#my-work">Projects</a></li>
-          <li><a class="hvr-underline-from-left" href="../../assets/Yanfeng-Jin-Resume-v8.pdf" target="_blank">Resume</a></li>
+          <li><a class="hvr-underline-from-left" href="../../assets/Yanfeng-Jin-Resume-v8.1.pdf" target="_blank">Resume</a></li>
           <li><a class="hvr-underline-from-left" href="https://medium.com/@yanfengjin" target="_blank">Writings</a></li>
           <li><a class="hvr-underline-from-left" href="../about-me.html">About Me</a></li>
         </ul>
@@ -105,10 +105,8 @@
               <li>
                 <a href="#research">Research</a>
                 <ul class="nav nav-stacked">
-                  <li><a href="#lit-review">Literature Review</a></li>
-                  <li><a href="#comp-analysis">Competitive Analysis</a></li>
-                  <li><a href="#surveys">Surveys</a></li>
-                  <li><a href="#interviews">Interviews & Affinity Mapping</a></li>
+                  <li><a href="#domain-research">Domain Research</a></li>
+                  <li><a href="#surveys-and-interviews">Surveys & Interviews</a></li>
                   <li><a href="#key-takeaways">Key Takeaways</a></li>
                 </ul>
               </li>
@@ -121,8 +119,8 @@
                   <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
                   <li><a href="#info-arch">Information Architecture</a></li>
                   <li><a href="#wireframes">Wireframes</a></li>
-                  <li><a href="#final-design">Final Design & User Flow</a></li>
-                  <li><a href="#prototype-small">Prototype</a></li>
+                  <li><a href="#final-prototype">Final Prototype</a></li>
+                  <li><a href="#design-considerations">Design Considerations</a></li>
                 </ul>
               </li>
 
@@ -165,10 +163,10 @@
               <div class="row">
                 <div id="problem" class="subgroup-left-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <h4>Problem</h4>
-                    <p>Research shows that <span class="highlight highlight-walker"><span>young American adults don't have adequate knowledge in personal finance</span></span>, and need better guidance on managing their financial resources.</p>
+                    <p>Research shows that <span class="highlight highlight-walker">young American adults don't have adequate knowledge in personal finance</span>, and need better guidance on managing their financial resources. Specifically, many of them would <span class="highlight highlight-walker">buy things out of impulse and regret those purchases afterwards</span>.</p>
 
                     <h4 id="solution">Solution</h4>
-                    <p>We present Mirror Mirror, a mobile app that helps emerging adults reflect on their past purchases and better understand the difference between the price of a product and its real value, one of the most important financial concepts one should understand based on our user research. Our application encourages users to <span class="highlight highlight-walker">evaluate their purchase decisions, provides actionable and personalized insights based on users' own reflections, and helps users avoid making purchases that they might regret in the future</span>.</p>
+                    <p>Mirror Mirror leverages AI algorithms to help emerging adults reflect on their past purchases and better understand the difference between the price of a product and its real value, one of the most important financial concepts one should understand based on our user research. Our application encourages users to <span class="highlight highlight-walker">evaluate their purchase decisions, provides actionable and personalized insights based on users' own reflections, and helps users avoid making purchases that they might regret in the future</span>.</p>
                 </div>
 
                 <div class="subgroup-right-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -213,7 +211,7 @@
             <section class="group">
               <div class="subgroup">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-                  <p class="p-center-wrapper"><a href="#prototype-small" class="btn black-button" type="button" name="button">Jump to Prototype</button></a></p><br><br>
+                  <p class="p-center-wrapper"><a href="#final-prototype" class="btn black-button" type="button" name="button">Jump to Prototype</button></a></p><br><br>
                 </div>
               </div>
 
@@ -232,111 +230,93 @@
               <h3>Research</h3>
               <hr>
               <div class="subgroup">
-                  <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their children about personal finance. <span class="highlight highlight-walker">However, we pivoted based on our primary and secondary research, and focused on helping emerging adults aged between 18 and 25 form better financial habits.</span></p>
+                  <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their teenage children about personal finance. <span class="highlight highlight-walker">However, we pivoted based on our primary and secondary research, and focused on helping emerging adults aged between 18 and 25 form better financial habits.</span></p>
               </div>
-              <div id="lit-review" class="subgroup">
-                  <h4>Literature Review</h4>
-                  <!-- <h4 class="large-quote">"Research shows that young American adults don't have adequate knowledge in personal finance, and need better guidance on managing their financial resources."</h4>
-                  <h6 class="large-quote-attribution">— Manton et al. (2011)</h6> -->
-                  <p>While most studies in the literature focused on evaluating the success of personal finance education curriculum in schools, data show that most young adults actually turn to their parents for advice when facing financial decision problems. <span class="highlight highlight-walker"> The results motivated us to focus on parents in our following surveys and interviews to learn about their barriers when it comes to educating their children about personal finance.</span> </p>
-              </div>
-              <div id="comp-analysis" class="subgroup">
-                  <h4>Competitive Analysis</h4>
+              <div id="domain-research" class="subgroup">
+                  <h4>Domain Research</h4>
+                  <p>To better understand the problem space, we conducted a <span class="highlight highlight-walker">literature review</span> and a <span class="highlight highlight-walker">competitive analysis</span>. For the competitive analysis, we focused on financial education products for children and financial management products for the general population.<p>
 
-                  <p>We analyzed the following financial education products for children and financial management products for the general population.
-                  </p>
+                  <img class="img-responsive" src="../../assets/walker-comp-analysis-all.png" alt="competitive analysis">
+                  <p class="img-caption">Products we analyzed for the Competitive Analysis</p>  <br><br>
 
-                  <img class="img-responsive" src="../../assets/walker-comp-analysis-all.png" alt="competitive analysis"> <br><br><br>
+                  <p class="small-margin-bottom">Our main findings include:</p>
 
-                  <p class="small-margin-bottom">We found that: </p>
                   <ul>
+                    <li>American teenagers <span class="highlight highlight-walker">turn to their parents for advice</span> when facing financial decision problems.</li>
                     <li>Existing personal finance education apps are <span class="highlight highlight-walker">either too childish for teenagers or too static to raise teenagers' interests.</span></li>
                     <li>Personal finance management apps focus on <span class="highlight highlight-walker">budgeting instead of spending wisely.</span></li>
+                    <li><span class="highlight highlight-walker">Few products target late adolescents</span>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college.</li>
                   </ul>
 
-                  <p><span class="highlight highlight-walker">Few products target late adolescents</span>, who are not yet motivated to learn about complicated financial concepts, but will soon need them as they start working or enter college. <span class="highlight highlight-walker">Therefore, we decided to narrow our user group down to late adolescents.</span></p>
-              </div>
-
-              <div id="surveys" class="subgroup">
-                <h4>Surveys</h4>
-                <p>Because of our limited timeframe, we decided to deploy a survey as the first step of our primary research, because it is the fastest way to get a wide range of responses. <span class="highlight highlight-walker">Based on the findings from the literature review, we chose parents of teenage children as our participants</span>. We hoped to understand what financial concepts parents hope their children learn before leaving home, whether they have attempted to educate their children about these concepts, and whether the process has been successful.</p>
-
-                <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey"> <br>
-
-                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#survey-details" class="btn black-button" name="button">See Detailed Survey Results</button></p>
-
-                <div class="collapse" id="survey-details">
-                  <p>Our main findings from the surveys are as follows: (observations here regarding "children" apply to teenage children and young adults)</p>
+                  <p class="small-margin-bottom">
+                    The results motivated us to:
+                  </p>
 
                   <ul>
-                    <li><span class="highlight highlight-walker">Budgeting</span>, <span class="highlight highlight-walker">staying out of debt</span>, and <span class="highlight highlight-walker">price vs. value</span> (knowing the difference between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
-
-                    <li>Managing one's own financial resources seems to be a <span class="highlight highlight-walker">distant topic</span> for children before college.</li>
-
-                    <li>Children usually <span class="highlight highlight-walker">lack interests</span> in learning about financial knowledge.</li>
-
-                    <li>Children in their early adolescence cannot understand certain personal finance knowledge.</li>
-
-                    <li>Parents <span class="highlight highlight-walker">lack tools</span> in educating their children about personal finance.</li>
+                    <li><span class="highlight highlight-walker">Focus on parents of teenage children</span> in our following surveys and interviews to learn about their barriers when it comes to educating their children about personal finance.</li>
+                    <li>Use a survey to <span class="highlight highlight-walker">verify if we should narrow our target audience down to late adolescents and their parents</span>.</li>
                   </ul>
 
-                  <p class="small-margin-bottom">These results lead us to design tools that will:</p>
 
-                  <ul>
-                    <li><span class="highlight highlight-walker">Motivate children to learn about concepts that parents believe are the most important</span>: budgeting, staying out of debt, and price vs. value.</li>
-                    <li><span class="highlight highlight-walker">Bring distant financial concepts closer to children</span> to stimulate their interests in personal finance.</li>
-                  </ul>
-                </div>
 
 
               </div>
 
-              <div id="interviews" class="subgroup">
-                <h4>Interviews & Affinity Mapping</h4>
-                <p>We conducted several semi-structured interviews with <span class="highlight highlight-walker">parents</span> and <span class="highlight highlight-walker">financial experts</span> to dive deeper into the problems parents encounter when educating their children about personal finance and gain advice from experts.<br><br>
+              <div id="surveys-and-interviews" class="subgroup">
+                <h4>Surveys & Interviews</h4><br>
+                <h5 class="walker-h5">Surveys</h5>
+                <p>We first used a survey to 1) help us <span class="highlight highlight-walker">narrow down our target user group</span> and 2) quickly learn about <span class="highlight highlight-walker">the most important financial concepts and the pain points</span> parents encounter when educating their children about personal finance. We chose parents of teenage children as our target audience based on the results of our domain research.<br></p>
 
-                We created an affinity map as a group to identify themes from our qualitative interview data.</p>
+                <img class="img-responsive full-img" src="../../assets/walker-survey.png" alt="Survey"> <br><br><br>
+
+                <h5 class="walker-h5">Interviews</h5>
+                <p>We then conducted semi-structured interviews with <span class="highlight highlight-walker">financial experts and parents of teenage children</span> to 1) gain advice from experts and 2) dive deeper into the problems parents encounter when educating their children about personal finance. <br><br>
+
+                We created an affinity map as a group to identify themes from our qualitative interview data.<br></p>
 
                   <img class="img-responsive full-img" src="../../assets/walker-affinity-all.png" alt="">
 
-                <br>
+                </p>
 
-                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#interview-details" class="btn black-button" name="button">See Detailed Interview Results</button></p>
+                <h5 class="walker-h5">Redefining Our User Group</h5>
+                <p>Consistent with our domain research, we decided to focus on helping <span class="highlight highlight-walker">parents of late adolescents</span> because children in their early adolescence cannot understand certain personal finance knowledge. It is also critical for late adolescents to learn that knowledge before they start to face real-world financial decisions.<br><br>
 
-                <div class="collapse" id="interview-details">
-                  <p class="small-margin-bottom">The main findings from the interviews include:
-                  </p>
-                  <ul>
-                    <li>Parents usually teach their children about personal finance through practical methods, like <span class="highlight highlight-walker">opening bank accounts for their children</span> and <span class="highlight highlight-walker">letting them manage financial resources</span>. These methods are considered effective. Some of the parents share financial knowledge during casual daily conversation too.</li>
+                From our expert interviews, we also learned something unexpected--<span class="highlight highlight-walker">it was premature for us to assume that only teenagers need help with personal finance management</span>. Emerging adults, those between 18 and 25 years old, also do not know how to manage their own financial resources. <br><br>
 
-                    <li>Lots of parents mentioned that <span class="highlight highlight-walker">there is not enough tools for them to teach their children about personal finance</span>.</li>
+                Therefore, we eventually focused our research on <span class="highlight highlight-walker">both parents of late adolecents, and emerging adults</span>.
+                </p>
 
-                    <li>Some parents consider themselves <span class="highlight highlight-walker">inadequate in financial literacy</span> and thus cannot really educate their children effectively.</li>
-                  </ul>
 
-                  <img class="img-responsive full-img"src="../../assets/walker-interview-notes.png" alt="interview notes"> <br><br>
-                  <p class="small-margin-bottom">In addition, our interviews with financial experts gave us some <span class="highlight highlight-walker">new insights</span> that we were not aware of before:</p>
-
-                  <ul>
-                    <li>Not only teenagers, <span class="highlight highlight-walker">but also adults in their early 20s</span> do not typically know how to manage their own financial resources.</li>
-
-                    <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <span class="highlight highlight-walker">However, most people, even adults, only have a vague idea about their financial own status</span>.</li>
-
-                    <li>It is important to <span class="highlight highlight-walker">make distant financial concepts concrete</span> for children in order for them to know their importance.</li>
-
-                    <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
-                  </ul>
-
-                </div>
               </div>
 
               <div id="key-takeaways" class="subgroup">
                 <h4>Key Takeaways</h4>
-                <p>Based on the survey & interview results, we realized that <span class="highlight highlight-walker">both pre-college teenagers and emerging adults aged between 18 and 25 have the need to learn to better manage their financial resources.</span> Since we cannot narrow down our user group based on our evidence, instead of arbitrarily deciding on a group to focus on, we delineated the different needs for pre-college teenagers and emerging adults, and brainstormed ideas for both.</p>
+                <p>Based on the survey & interview results, we realized that <span class="highlight highlight-walker">both late adolescents and emerging adults aged between 18 and 25 have the need to learn to better manage their financial resources.</span> Since we cannot narrow down our user group based on our evidence, instead of arbitrarily deciding on a group to focus on, <span class="highlight highlight-walker">we delineated the different needs for pre-college teenagers and emerging adults, and brainstormed ideas for both.</span></p><br>
 
-                <img class="img-responsive full-img"src="../../assets/walker-takeaways.png" alt="take aways">
-                <br><br><br>
+                <img class="img-responsive full-img"src="../../assets/walker-takeaway-1.png" alt="take aways">
+                <br><br>
+                <img class="img-responsive full-img"src="../../assets/walker-takeaway-2.png" alt="take aways">
+                <br>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#detailed-takeaways" class="btn black-button" name="button">See Detailed Takeaways</button></p>
 
+                <div class="collapse" id="detailed-takeaways">
+                  <p class="small-margin-bottom">Our main findings include:</p>
+                  <ul>
+                    <li><span class="highlight highlight-walker">Budgeting</span>, <span class="highlight highlight-walker">staying out of debt</span>, and <span class="highlight highlight-walker">price vs. value</span> (knowing the difference between the value and the price of something) are the top three concepts that parents want their children to learn before leaving home.</li>
+
+                    <li>Managing one's own financial resources seems to be a <span class="highlight highlight-walker">distant topic</span> for late adolecents and emerginng adults, who lack interests in learning financial knowledge.</li>
+
+                    <li>Parents <span class="highlight highlight-walker">lack tools</span> in educating their children about personal finance.</li>
+
+                    <li>Some parents consider themselves <span class="highlight highlight-walker">inadequate in financial literacy</span> and thus cannot really educate their children effectively.</li>
+
+                    <li>Making a detailed budget plan and sticking to it (similar to a diet plan) is essential. <span class="highlight highlight-walker">However, most people, even adults, only have a vague idea about their financial own status</span>.</li>
+
+                    <li>Impulse buying seems to be a major problem for emerging adults.</li>
+
+                    <li>Pre-college teenagers usually do not understand the importance of financial literacy when they are around their parents; once they enter college and start facing real-world financial decisions, they realize the importance of learning personal finance knowledge, but they no longer have enough chance/motivation to ask their parents about the topic.</li>
+                  </ul>
+                </div>
               </div>
             </section>
 
@@ -355,7 +335,7 @@
 
               <div id="ideation" class="subgroup">
                 <h4>Ideation</h4>
-                <p>Based on the evidence we collected from user research, we conducted an <span class="highlight highlight-walker">informed brainstorming session</span>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.</p>
+                <p class="small-margin-bottom">Based on the evidence we collected from user research, we conducted an <span class="highlight highlight-walker">informed brainstorming session</span>. Each member first came up with a variety of ideas individually. The group then convened for several hours to share all the ideas and form a number of new ideas.</p>
                 <br>
               </div>
             </section>
@@ -376,7 +356,7 @@
                     We then narrowed down our ideas by grouping similar ones into bigger themes. <span class="highlight highlight-walker">We also referred back to the main findings in our user research, to make sure that all the themes we identified can address at least one of the main concerns of our users.</span>
                   </p>
                 </div>
-                <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <span class="highlight highlight-walker">The first two concepts primarily address the need of emerging adults aged between 18 and 25, while the last two concepts target parents and their pre-college children.</span></p>
+                <p>Eventually, we narrowed our ideas down to the following four large themes that address our users’ concerns from different perspectives. <span class="highlight highlight-walker">The first two concepts primarily address the need of emerging adults aged between 18 and 25, while the last two concepts target parents of late adolescents.</span></p>
 
                 <img class="img-reponsive full-img" src="../../assets/walker-concepts2.png" alt="concepts">
                 <br><br><br><br>
@@ -392,24 +372,48 @@
                 <p>After that, we created a usage scenario for each concept, and drew out wireframes for crucial screens that represent the essence of our ideas. <span class="highlight highlight-walker">We then showed the following concepts and scenarios to potential users, and asked them about their preferences and their feedback on our designs.</span>
                 </p>
                 <h5 class="walker-h5">Concept 1</h5>
+
                 <p class="small-margin-bottom">Our first concept leverages push notifications to encourage users (emerging adults) to <span class="highlight highlight-walker">provide feedback to themselves over time.</span> With the user's own input, the system can generate personalized financial advice for the user.</p>
                 <img class="img-responsive full-img" src="../../assets/walker-concept-1.png" alt="Concept 1">
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#why-concept-1" class="btn black-button" name="button">Why This Concept?</button></p>
+
+                <div class="collapse" id="why-concept-1">
+                  <img class="img-responsive" src="../../assets/walker-concept-1-advantage.png" alt="Concept 1's Advantage">
+                </div>
+                <br>
                 <br>
                 <br>
                 <h5 class="walker-h5">Concept 2</h5>
                 <p class="small-margin-bottom">Concept 2 enables users (emerging adults) to set long-term financial goals, and <span class="highlight highlight-walker">clearly visualize how their current saving/spending behaviors can influence these goals.</span> It brings distant financial concepts closer to users and provides actionable suggestions on what users can do now to achieve their goals in the future.</p>
                 <img class="img-responsive" src="../../assets/walker-concept-2.png" alt="Concept 1">
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#why-concept-2" class="btn black-button" name="button">Why This Concept?</button></p>
+
+                <div class="collapse" id="why-concept-2">
+                  <img class="img-responsive" src="../../assets/walker-concept-2-advantage.png" alt="Concept 2's Advantage">
+                </div>
+                <br>
                 <br>
                 <br>
                 <h5 class="walker-h5">Concept 3</h5>
                 <p class="small-margin-bottom">Our third concept provides a comprehensive, step-by-step guide for parents to discuss financial matters with their children. It includes <span class="highlight highlight-walker">actionable steps parents can follow to involve their children in major financial decisions in the family.</span></p>
                 <img class="img-responsive" src="../../assets/walker-concept-3.png" alt="Concept 1">
-                <br>
-                <br>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#why-concept-3" class="btn black-button" name="button">Why This Concept?</button></p>
+
+                <div class="collapse" id="why-concept-3">
+                  <img class="img-responsive" src="../../assets/walker-concept-3-advantage.png" alt="Concept 3's Advantage">
+                </div>
+                <!-- <p class="small-margin-bottom list-title">Why This Concept:</p> -->
+
+                <br><br><br>
                 <h5 class="walker-h5">Concept 4</h5>
                 <p class="small-margin-bottom">Concept 4 aims at <span class="highlight highlight-walker">giving children a sense of agency</span> by giving them a portion of the family's budget and letting them make spending decisions under the guidance of their parents. Parents will provide rewards depending on how well their children spend the money. </p>
                 <img class="img-responsive" src="../../assets/walker-concept-4.png" alt="Concept 1">
-                <br>
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#why-concept-4" class="btn black-button" name="button">Why This Concept?</button></p>
+
+                <div class="collapse" id="why-concept-4">
+                  <img class="img-responsive" src="../../assets/walker-concept-4-advantage.png" alt="Concept 4's Advantage"><br><br><br>
+                </div>
               </div>
 
               <div id="user-feedback" class="subgroup">
@@ -455,18 +459,33 @@
               <!-- <div class="subgroup">
               </div> -->
 
-              <div id="final-design" class="subgroup">
-                <h4>Final Design & User Flow</h4>
-                <img class="img-responsive" src="../../assets/walker-user-flow-1.png" alt="Concept 1">
-                <img class="img-responsive" src="../../assets/walker-user-flow-2.png" alt="Concept 1">
-                <img class="img-responsive" src="../../assets/walker-user-flow-3.png" alt="Concept 1">
+              <div id="final-prototype" class="subgroup">
+                <h4>Final Prototype</h4>
+                <p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="http://invis.io/7FEAWBZ23">here</a>.</p>
+                <iframe class="hidden-xs"width="438" height="930" src="http://invis.io/7FEAWBZ23" frameborder="0" allowfullscreen></iframe>
+
+                <p class="p-center-wrapper"><button data-toggle="collapse" data-target="#user-flow" class="btn black-button" name="button">See Detailed User Flow</button></p>
+                <div class="collapse" id="user-flow">
+                  <img class="img-responsive" src="../../assets/walker-user-flow-1.png" alt="Concept 1">
+                  <img class="img-responsive" src="../../assets/walker-user-flow-2.png" alt="Concept 1">
+                  <img class="img-responsive" src="../../assets/walker-user-flow-3.png" alt="Concept 1">
+                </div>
               </div>
 
-              <div id="prototype-small" class="subgroup">
-                <h4>Prototype</h4>
-                <p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="http://invis.io/7FEAWBZ23">here</a>.</p>
-                <iframe width="438" height="930" src="http://invis.io/7FEAWBZ23" frameborder="0" allowfullscreen></iframe>
+              <div id="design-considerations" class="subgroup">
+                <h4>Design Considerations</h4> <br>
+                <!-- <p>Here are some of the topics we discussed during our design process.</p> -->
+                <h5 class="walker-h5">Encouraging Frequent Reflections</h5>
+                <img class="img-responsive full-img"src="../../assets/walker-design-frequent-reflections.png" alt="Frequent Reflections"><br>
+                <h5 class="walker-h5">Designing for AI</h5>
+                <img class="img-responsive full-img"src="../../assets/walker-design-AI.png" alt="Frequent Reflections">
+                <!-- <h5 class="walker-h5">Designing for Different Types of Users</h5> -->
               </div>
+
+              <!-- <div id="prototype-small" class="subgroup">
+                <h4>Prototype</h4>
+
+              </div> -->
             </section>
 
             <div class="section-divider">
