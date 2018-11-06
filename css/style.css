@@ -18,6 +18,7 @@
     --eatxplore-color:#F9CB42;
     --walker-color:#5AD1FF;
     --about-color: #44DCC4;
+    --cookfresh-color: #CFEB68;
 }
 
 
@@ -519,6 +520,11 @@ hr {
 
 .about-h5 {
   border-left: 6px solid var(--about-color);
+  padding-left: 28px;
+}
+
+.cookfresh-h5 {
+  border-left: 6px solid var(--cookfresh-color);
   padding-left: 28px;
 }
 

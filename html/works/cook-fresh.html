@@ -104,35 +104,30 @@
                 </ul>
               </li>
 
-              <!-- <li>
-                <a href="#research">Research</a>
+
+              <li>
+                <a href="#problem-discovery">Problem Discovery</a>
                 <ul class="nav nav-stacked">
-                  <li><a href="#lit-review">Literature Review</a></li>
-                  <li><a href="#comp-analysis">Competitive Analysis</a></li>
-                  <li><a href="#surveys">Surveys</a></li>
-                  <li><a href="#interviews">Interviews & Affinity Mapping</a></li>
-                  <li><a href="#key-takeaways">Key Takeaways</a></li>
+                  <li><a href="#user-needs">User Needs</a></li>
+                  <li><a href="#why-voice">Why Voice?</a></li>
                 </ul>
               </li>
 
               <li>
                 <a href="#design">Design</a>
                 <ul class="nav nav-stacked">
-                  <li><a href="#ideation">Ideation</a></li>
-                  <li><a href="#design-alt">Design Alternatives</a></li>
-                  <li><a href="#user-feedback">User Feedback & Design Implications</a></li>
-                  <li><a href="#info-arch">Information Architecture</a></li>
-                  <li><a href="#wireframes">Wireframes</a></li>
-                  <li><a href="#final-design">Final Design & User Flow</a></li>
-                  <li><a href="#prototype-small">Prototype</a></li>
+                  <li><a href="#happy-path">The Happy Path</a></li>
+                  <li><a href="#synonyms">Synonyms</a></li>
+                  <li><a href="#combo-breakers">Combo-Breakers</a></li>
                 </ul>
               </li>
 
-              <li>
-                <a href="#evaluate">Evaluate</a>
+              <!-- <li>
+                <a href="#reflections">Reflections</a>
                 <ul class="nav nav-stacked">
-                  <li><a href="#usability">Usability Testing</a></li>
-                  <li><a href="#design-iterations">Design Iterations</a></li>
+                  <li><a href="#happy-path">The Happy Path</a></li>
+                  <li><a href="#synonyms">Synonyms</a></li>
+                  <li><a href="#combo-breakers">Combo-Breakers</a></li>
                 </ul>
               </li> -->
 
@@ -183,7 +178,7 @@
                     <p>This is a small exercise I explored with my friend Shengxi in order to learn the basics of designing Voice User Interfaces. We followed <a href="https://developer.amazon.com/designing-for-voice/design-process/">the process recommended by Amazon</a> to design the voice interaction.</p>
 
                     <h4 id="problem">Problem</h4>
-                    <p>College students, with their busy course schedule, usually find cooking and organizing their fridges time-consuming. <span class="highlight highlight-cook-fresh">Some usually forget what they have in the fridge and end up wasting food; others hate spending time trying to figure out what to cook for each meal with the available ingredients</span>.</p>
+                    <p>College students and young professionals, with their busy schedules, usually find cooking and organizing their fridges time-consuming. <span class="highlight highlight-cook-fresh">Some usually forget what they have in the fridge and end up wasting food; others hate spending time trying to figure out what to cook for each meal with the available ingredients</span>.</p>
 
                     <h4 id="solution">Solution</h4>
                     <p class="small-margin-bottom">We present Cook Fresh, an Alexa skill concept that enables Alexa to <span class="highlight highlight-cook-fresh">suggest recipes based on available ingredients in the fridge, remind users of expiring food, order missing ingredients from Amazon Fresh, and provide step-by-step cooking guidance</span>.</p>
@@ -218,23 +213,14 @@
 
               <div id="design-outcome" class="subgroup">
                   <h4>Design Outcome</h4>
-                  <p>Our prototype in Sayspring can be viewed <a href="https://app.sayspring.com/projects/3a0f7c0f-627a-48e1-b49f-1aebe8a2269a/invitation/new">here</a>. However, you might need a Sayspring account in order to access it.</p>
+                  <p>I no longer have access to my intial prototype in Sayspring since its acquisition by Adobe. I will create another prototype and provide its link soon. Please refer to the process below if you're interested in the design.</p>
+                  <!-- <p>Our prototype in Sayspring can be viewed <a href="https://app.sayspring.com/projects/3a0f7c0f-627a-48e1-b49f-1aebe8a2269a/invitation/new">here</a>. However, you might need a Sayspring account in order to access it.</p> -->
               </div>
 
               <!-- <div class="subgroup">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                   <p class="p-center-wrapper"><a href="#prototype-small" class="btn black-button" type="button" name="button">Jump to Prototype</button></a></p><br><br>
                 </div>
-              </div> -->
-
-
-              <!-- <div id="lessons-learned" class="subgroup">
-                  <h4>What I Learned</h4>
-                  <ul>
-                    <li>The user-centered design process</li>
-                    <li>Tools for UI design and prototyping</li>
-                    <li>How to work efficiently in an inter-disciplinary team</li>
-                  </ul>
               </div> -->
           </section>
 
@@ -247,20 +233,53 @@
             </div>
           </div>
 
-          <section id="research" class="group">
-            <div class="subgroup">
+          <section id="problem-discovery" class="group" data-aos="fade-up" data-aos-duration="600">
+            <h3>Problem Discovery</h3>
+            <hr>
+            <div id="user-needs" class="subgroup">
+              <h4>User Needs</h4>
+              <p>As in design for any other platforms, <span class="highlight highlight-cook-fresh">we started by talking with people</span>, identifying their problems, and delineating user needs. For this short design exercise, we quickly talked with people around us, and categorized their needs into three large categories: <span class="highlight highlight-cook-fresh">quickly get recipe suggestions based on available ingredients, reminders about food expiration, and hands-free cooking instructions.</span>
+
+              <img class="img-responsive full-image" src="../../assets/cookfresh-user-needs.png" alt="Happy Path">
+            </p>
+            </div>
+
+            <div id="why-voice" class="subgroup">
+              <h4>Why Voice?</h4><br>
+              <h5 class="cookfresh-h5">Voice is a Natural Way of Communication</h5>
+              <p>It is quick and intuitive for users to simply ask “what should I cook for dinner” instead of navigating through a graphical UI and learn how the information is structured. In this way, <span class="highlight highlight-cook-fresh">users won’t need to adapt to the technology and will get quick suggestions and instructions from the skill.</span></p>
+
+              <h5 class="cookfresh-h5">Voice User Interface Creates an Eyes and Hands-Free Experience</h5>
+              <p>Voice UI doesn’t require users to touch or look at any external device. <span class="highlight highlight-cook-fresh">This is especially helpful in the cooking context, in which users’ eyes and hands are occupied.</span></p>
+
+            </div>
+          </section>
+
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+          <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
+            <h3>Design</h3>
+            <hr>
+            <div id="happy-path" class="subgroup">
+              <h4>The Happy Path</h4>
+              <p>I followed Amazon's VUI Design guidelines and started with designing "the Happy Path." For each of Cook Fresh's response, <span class="highlight highlight-cook-fresh">I referred back to the design guidelines to make sure that it sounds natural & concise, that it can provide enough information to successfully engage the user in a conversation, and that it can guide the user's response without explicitly telling him/her what to say.</span></p>
+
+              <img class="img-responsive full-image" src="../../assets/cookfresh-happy-path-1.png" alt="Happy Path"><br><br><br><br>
               <p>This project is still being updated. More details to come.</p>
             </div>
-              <!-- <h3>Research</h3>
-              <hr>
-              <div class="subgroup">
-                  <p>We started the project having a vague idea that we hope to help young Americans learn more about personal finance. Initially, we hoped to help parents better educate their children about personal finance. <span class="highlight highlight-cook-fresh">However, we pivoted based on our primary and secondary research, and focused on helping emerging adults aged between 18 and 25 form better financial habits.</span></p>
-              </div>
-              <div id="lit-review" class="subgroup">
-                  <h4>Literature Review</h4>
-                  <p>While most studies in the literature focused on evaluating the success of personal finance education curriculum in schools, data show that most young adults actually turn to their parents for advice when facing financial decision problems. <span class="highlight highlight-cook-fresh"> The results motivated us to focus on parents in our following surveys and interviews to learn about their barriers when it comes to educating their children about personal finance.</span> </p>
-              </div> -->
-            </section>
+          </section>
+
+
+
+
+
         </div>
       </div>
     </div>
