@@ -116,20 +116,22 @@
               <li>
                 <a href="#design">Design</a>
                 <ul class="nav nav-stacked">
+                  <li><a href="#thinking-boldly">Thinking Boldly</a></li>
                   <li><a href="#happy-path">The Happy Path</a></li>
-                  <li><a href="#synonyms">Synonyms</a></li>
-                  <li><a href="#combo-breakers">Combo-Breakers</a></li>
+                  <li><a href="#synonyms-combo-breakers">Synonyms & Combo-Breakers</a></li>
+                  <li><a href="#refining-interactions">Refining Interactions</a></li>
+                  <li><a href="#future-steps">Future Steps</a></li>
                 </ul>
               </li>
 
-              <!-- <li>
+              <li>
                 <a href="#reflections">Reflections</a>
                 <ul class="nav nav-stacked">
-                  <li><a href="#happy-path">The Happy Path</a></li>
-                  <li><a href="#synonyms">Synonyms</a></li>
-                  <li><a href="#combo-breakers">Combo-Breakers</a></li>
+                  <li><a href="#challenges">Challenges for Voice Interface Design</a></li>
+                  <li><a href="#principles">Unchanging Design Principles</a></li>
+                  <li><a href="#importance-user-testing">The Importance of User Testing</a></li>
                 </ul>
-              </li> -->
+              </li>
 
             </ul>
           </div>
@@ -267,13 +269,103 @@
           <section id="design" class="group" data-aos="fade-up" data-aos-duration="600">
             <h3>Design</h3>
             <hr>
+
+            <div id="thinking-boldly" class="subgroup">
+              <h4>Thinking Boldly</h4>
+              <p>Since the primary purpose of this exercise is to get familiar with Voice Interface design, <span class="highlight highlight-cook-fresh">we decided to think bold and imagine the future state of Voice Interface and Smart Home Technologies.</span><br><br>
+
+              <span class="highlight highlight-cook-fresh">One such assumption we made is that future smart fridges would be able to recognize what's in them, and whether the food/ingredients are about to expire.</span> This technology can be realized by adding a tag to each product we buy to encode information about product name & expiration date, or by using computer vision algorithms to detect products within the fridge and estimate whether they are about to expire. <a href="https://www.engadget.com/2018/01/09/whirlpool-yummly-smart-kitchen/" target="_blank">Similar ideas were later shown at CES 2018</a>, demonstrating the feasibility of our idea.
+
+              </p>
+            </div>
+
             <div id="happy-path" class="subgroup">
               <h4>The Happy Path</h4>
-              <p>I followed Amazon's VUI Design guidelines and started with designing "the Happy Path." For each of Cook Fresh's response, <span class="highlight highlight-cook-fresh">I referred back to the design guidelines to make sure that it sounds natural & concise, that it can provide enough information to successfully engage the user in a conversation, and that it can guide the user's response without explicitly telling him/her what to say.</span></p>
+              <p>We followed Amazon's VUI Design guidelines and started with designing "the Happy Path." For each of Cook Fresh's response, <span class="highlight highlight-cook-fresh">we referred back to the design guidelines to make sure that it sounds natural & concise, that it can provide enough information to successfully engage the user in a conversation, and that it can guide the user's response without explicitly telling him/her what to say.</span></p>
 
-              <img class="img-responsive full-image" src="../../assets/cookfresh-happy-path-1.png" alt="Happy Path"><br><br><br><br>
-              <p>This project is still being updated. More details to come.</p>
+              <img class="img-responsive full-image" src="../../assets/cookfresh-happy-path-1.png" alt="Happy Path"><br><br>
+
             </div>
+
+            <div id="synonyms-combo-breakers" class="subgroup">
+              <h4>Synonyms & Combo-Breakers</h4>
+
+              <p>We then built on the happy path and started brainstorming how the users might respond differently from our planned path. To come up with all these possibilities, <span class="highlight highlight-cook-fresh">we conducted a role play with several of our friends to gather possible responses.</span> We then organized them into 2 groups according to Amazon's guideline, synonyms and combo-breakers. </p>
+
+              <h5 class="cookfresh-h5">Synonyms</h5>
+              <p>A lot of times, users will express the same ideas we expect without speaking the exact same words we have. Therefore, to create the prototype, we came up with synonyms for each input, and added them into our prototype.</p>
+              <img class="img-responsive full-image" src="../../assets/cookfresh-synonyms.png" alt="Synonyms"> <br><br>
+
+              <h5 class="cookfresh-h5">Combo-Breakers</h5>
+              <p>Other times, users might not strictly follow the happy path to answer the questions. <span class="highlight highlight-cook-fresh">They might reply with another question or come up with an option that is not expected.</span> Therefore, we listed a couple of such "combo-breakers" to enable our skill to switch context when necessary to maintain the conversation.</p>
+              <img class="img-responsive full-image" src="../../assets/cookfresh-combo-breakers.png" alt="Combo Breakers"> <br><br>
+
+              <p>These synonyms and combo-breakers are not exhaustive, nor were we able to incorporate every situation into our design. It was just a thought exercise that pushed us to think more about how to design for voice, with all the unexpected input from users.</p>
+            </div>
+
+            <div class="subgroup" id="refining-interactions">
+              <h4>Refining Interactions</h4>
+              <p>We then thought about different use cases based on the combo-breakers and our initial user needs. We refined our scenario by adding the following two paths:</p>
+              <img class="img-responsive full-image" src="../../assets/cookfresh-new-flows.png" alt="New Flows"> <br><br>
+              <p>Note that to enable the function of ordering missing ingredients, users will be required to link the skill to their Amazon Fresh account, and give the skill access to their mailing address. They might also need to manually select the ingredient they want the first time they use this function, so that Cook Fresh can remember their preference and order the same ingredient the next time it is needed.</p>
+            </div>
+
+            <div class="subgroup" id="future-steps">
+              <h4>Future Steps</h4>
+              <p>I couldn't do everything within the short time that I finished this exercise. There are a lot more things to consider and explore if I had more time.</p>
+
+              <h5 class="cookfresh-h5">First Use Experience</h5>
+              <p><span class="highlight highlight-cook-fresh">A lot of the interactions we prototyped are based on the assumption that users have already gone through the onboarding process and have linked their smart fridge and their Amazon account with the skill.</span> That experience, whether it be through voice or through the Alexa app, requires further work. The initial set up experience should also inform the users about what the skill is capable of doing.</p>
+
+              <h5 class="cookfresh-h5">Personalized Experience for Long-Term Users</h5>
+              <p>One feature we prototyped earlier was directly helping users order an ingredient on Amazon Fresh and have it delivered to the user's address. By learning the user's preference over time, we are able to help users make such orders without having to confirm with them about their preferences every time. <span class="highlight highlight-cook-fresh">For long-term users, Cook Fresh should be able to learn a lot about their dietary preferences over time, and provide experience tailored to these preferences (e.g. what recipes to recommend at what time, what ingredients to order).</span> I'll still need to work out these details if I had more time.</p>
+
+              <h5 class="cookfresh-h5">User Testing</h5>
+              <p>Though we brought our prototype to some users to help us refine our design, more comprehensive user testing sessions are required to validate whether the design helps better solve our users' problems, and whether the interaction makes sense for a variety of users in different contexts.</p>
+            </div>
+
+          </section>
+
+          <div class="section-divider">
+            <div class="dot1">
+            </div>
+            <div class="dot2">
+            </div>
+            <div class="dot3">
+            </div>
+          </div>
+
+          <section id="reflections" class="group" data-aos="fade-up" data-aos-duration="600">
+            <h3>Reflections</h3>
+            <hr>
+
+
+
+            <div class="subgroup" id="challenges">
+              <h4>Challenges for Voice Interface Design</h4>
+              <p>The reason why I started this exercise and enjoyed it so much is that there are unique challenges in VUI design that pushed me to think more about how to compensate for the limitations of voice communication through design. These challenges include:</p>
+
+              <h5 class="cookfresh-h5">High Expectations from Users & Technical Constraints</h5>
+              <p>Voice is a natural form of interaction for people; it makes sense for them to learn to use a GUI, but they'll be frustrated if they're forced to learn how to talk. <span class="highlight highlight-cook-fresh">While users expect to talk freely with a digital assistant, current technologies do not support such free conversations</span>--it is still hard for computers to understand the context and come up with an answer that always matches the user's expectations in a truly free conversation. Therefore, <span class="highlight highlight-cook-fresh">it is up to the designer to structure the digital assistant's words to elicit certain types of responses from the users that's easy to process technically, without explicitly telling the users what to do.</span></p>
+
+              <h5 class="cookfresh-h5">Non-Linear Interactions</h5>
+              <p>GUI interactions are mostly linear; users need to navigate through a certain path in order to get to where they need to be. Voice interfaces, on the other hand, cannot and should not provide such constraints. <span class="highlight highlight-cook-fresh">Therefore, designers need to think about different responses and combo-breakers users might provide, and let the digital assistant be flexible given the user input.</span></p>
+
+              <h5 class="cookfresh-h5">Voice Contains Less Information</h5>
+              <p>Human beings are able to process less auditory information compared to visual information. People can quickly browse through a list and choose an item, but if they listen to a list, they need to listen to the items one by one, and will likely forget about the  previous information by the end. <span class="highlight highlight-cook-fresh">Therefore, when designing for voice, designers need to provide only the most necessary information at the moment, and let users to take their turn to make a choice, or to request further information.</span></p>
+
+            </div>
+
+            <div class="subgroup" id="principles">
+              <h4>Unchanging Design Principles</h4>
+              <p>Despite all the differences between VUI design and GUI design, I was able to find common design principles that apply to both. For example, in both cases, <span class="highlight highlight-cook-fresh">designers need to provide just enough information to avoid information overload; we need to provide constraints to guide users through a certain path; we need to focus on the tasks users are trying to accomplish, think about their context, their needs, and provide solutions that best suit their needs within the context.</span> Though the nature of different media & technologies requires us to pay special attention to certain principles (e.g. people can process much less auditory information compared to visual information, so we need to be even more concise when designing for audio), the underlying principles remain the same.</p>
+            </div>
+
+            <div class="subgroup" id="importance-user-testing">
+              <h4>The Importance of User Testing</h4>
+              <p>User testing seems to be even more important when designing for voice. <span class="highlight highlight-cook-fresh">Since voice interactions are more natural for users, there are simply more possiblities that users will not follow our predefined happy path and say something totally unexpected.</span> As designers, it is crucial for us to test our dialog flows with our users to discover all those different possibilities and try to incorporate them into the design.</p>
+            </div>
+
           </section>
 
 
