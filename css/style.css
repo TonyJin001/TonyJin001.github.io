@@ -56,6 +56,42 @@ hr {
   font-weight: 400;
 }
 
+.feature-row {
+  padding-bottom: 80px;
+}
+
+.video-features {
+    width: 85%;
+    border-radius: 16px;
+    box-shadow: 2px 4px 24px rgba(0,0,0,0.10);
+}
+
+.video-feature-title {
+  margin-top: 12vw;
+  font-family: 'Circular Std Black' !important;
+  font-size: 34px !important;
+  padding-bottom: 12px;
+  line-height: 40px !important;
+}
+
+.video-feature-title-eatxplore {
+  color: var(--eatxplore-color) !important;
+}
+
+.video-feature-subtitle {
+  font-family: 'Fakt', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-black);
+  padding-bottom: 12px;
+}
+
+.video-feature-content {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
 
 
 .bg-THD {
@@ -1380,6 +1416,12 @@ i {
 
   body {
     margin-top: 80px;
+  }
+
+  .video-features {
+      max-width: 250px;
+      display: block;
+      margin: 0 auto;
   }
 
   .bg {
