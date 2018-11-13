@@ -31,6 +31,8 @@ $(document).ready(function(){
   // $('#template-to-top').setAttribute("data-aos","fade-up");
   // $('#template-to-top').setAttribute("data-aos-duration","600");
 
+
+
   $( window ).on( "load", function() {
     preloaderFadeOutTime = 500;
     var preloader = $('.spinner-wrapper');
