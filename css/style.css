@@ -13,6 +13,7 @@
     --highlight-THD: #FDAA7560;
     --highlight-eatxplore: #F9CB4260;
     --highlight-thriller: #BB142215;
+    --highlight-photos: #1A73E825;
     --highlight-about: #9EEBCF60;
 
     --THD-color:#F96302;
@@ -20,6 +21,7 @@
     --walker-color:#5AD1FF;
     --about-color: #44DCC4;
     --cookfresh-color: #CFEB68;
+    --photos-color:#1A73E8;
 }
 
 
@@ -74,6 +76,8 @@ hr {
   line-height: 40px !important;
 }
 
+
+
 .video-feature-title-eatxplore {
   color: var(--eatxplore-color) !important;
 }
@@ -85,6 +89,31 @@ hr {
   line-height: 24px;
   color: var(--primary-black);
   padding-bottom: 12px;
+}
+
+
+.video-alternative-title {
+  font-family: 'Circular Std Black' !important;
+  font-size: 56px !important;
+  padding-bottom: 12px;
+  line-height: 40px !important;
+  color:#1A73E850 !important;
+}
+
+.video-alternative-subtitle {
+  font-family: 'Fakt', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-black);
+  padding-bottom: 12px;
+}
+
+.photos-pros {
+  font-family: 'Circular Std Black';
+  font-size: 18px;
+  color: #5694EE;
+  letter-spacing: 0.56px;
 }
 
 .video-feature-content {
@@ -126,6 +155,11 @@ hr {
 
 .bg-thriller {
   background: url('../assets/thriller-jumbotron-gradient.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+.bg-photos {
+  background: url('../assets/photos-jumbotron.jpg') no-repeat center center;
   background-size:cover;
 }
 
@@ -530,6 +564,14 @@ hr {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-thriller) 50%);
 }
 
+.highlight-photos {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-photos) 50%);
+}
+
+.highlight-photos.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-photos) 50%);
+}
+
 .highlight-link {
   position: relative;
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-main) 50%);
@@ -575,6 +617,11 @@ hr {
 
 .cookfresh-h5 {
   border-left: 6px solid var(--cookfresh-color);
+  padding-left: 28px;
+}
+
+.photos-h5 {
+  border-left: 6px solid var(--photos-color);
   padding-left: 28px;
 }
 
