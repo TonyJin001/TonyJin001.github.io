@@ -82,6 +82,10 @@ hr {
   color: var(--eatxplore-color) !important;
 }
 
+.video-feature-title-photos {
+  color: var(--photos-color) !important;
+}
+
 .video-feature-subtitle {
   font-family: 'Fakt', sans-serif;
   font-size: 18px;
