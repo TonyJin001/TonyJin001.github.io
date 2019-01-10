@@ -899,6 +899,8 @@ i {
     background-color: transparent;
     padding: 30px 40px 40px 40px;
     border: none;
+    background-image: none;
+    box-shadow: none;
   }
 
   .navbar-brand {
@@ -970,7 +972,7 @@ i {
   .card-title {
     /* portfolio-walker-thumbnail: */
     /* Mirror Mirror: */
-    font-family: "Circular Std Black" !important;
+    font-family: "Circular Std Bold" !important;
     font-size: 24px;
     color: var(--primary-black);
     margin-bottom: 8px;
