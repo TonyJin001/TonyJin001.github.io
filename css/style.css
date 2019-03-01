@@ -163,7 +163,7 @@ hr {
 }
 
 .bg-photos {
-  background: url('../assets/photos-jumbotron.jpg') no-repeat center center;
+  background: url('../assets/photos-jumbotron.png') no-repeat center center;
   background-size:cover;
 }
 
