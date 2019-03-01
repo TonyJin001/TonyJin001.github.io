@@ -298,7 +298,7 @@
 
                   <p><span class="highlight highlight-photos">Why is this?</span> <br><br>
 
-                    As I looked more into their answers, I realized that <span class="highlight highlight-photos">the reddit users who responded tend to be more experienced photographers!</span> Unlike those who are just casually taking snapshots of life, these semi-professional or professional photographers either take fewer, high-quality shots, or spend a long time manually refining their photographs using tools like Lightroom. <span class="highlight highlight-photos">In other words, they either don't have lots of similar photos in their library, or do have a lot, but consider it necessary to go over them one by one to make sure they select the best photos and post-process them.</span> <br><br>
+                    As I looked more into their answers, I realized that <span class="highlight highlight-photos"><strong>the reddit users who responded tend to be more experienced photographers!</strong></span> Unlike those who are just casually taking snapshots of life, these semi-professional or professional photographers either take fewer, high-quality shots, or spend a long time manually refining their photographs using tools like Lightroom. <span class="highlight highlight-photos">In other words, they either don't have lots of similar photos in their library, or do have a lot, but consider it necessary to go over them one by one to make sure they select the best photos and post-process them.</span> <br><br>
 
                     Therefore, it seems like more professional photographers fall out of my target audience. What about more casual photographers, who just use cameras to capture snapshots of life?
                   </p>
@@ -349,7 +349,7 @@
             <section class="group">
 
               <div class="subgroup">
-                <p>None of the existing products facilitates comparison between photos. Only Gemini helps users manage similar photos, but users will need to go into the app to manually clean up their photo library. Can we make the clean up process more care-free, and help users better compare similar photos they took?</p>
+                <p><span class="highlight highlight-photos"><strong>None of the existing products facilitates comparison between photos, which is actually the biggest problem I identified in my research.</strong></span> Only Gemini helps users manage similar photos, but users will need to go into the app to manually clean up their photo library. Can we make the clean up process more care-free, and help users better compare similar photos they took?</p>
               </div>
 
               <div id="design-goals" class="subgroup">
@@ -389,6 +389,8 @@
 
                 Google Photos enables users to search for particular photos using natural language (e.g. Paris Summer, Dogs, Sunset, etc.). It also automatically creates albums for photos taken around the same time and place, and recommends them to users. Should I focus on these functions instead to better help users browse through their memories?<br><br>
 
+                <img class="img-responsive full-img" src="../../assets/photos-where-redesign.png" alt="Where redesign"> <br><br>
+
                 <span class="highlight highlight-photos">I referred back to what I learned from the user interviews.</span> Most users I talked with spent most of their time browsing through photos in their "Photos" tab. Some do use "search", but only for searching specific photos. As for the automatically generated albums, users mentioned that those albums don't contain all the photos they took. <span class="highlight highlight-photos">Though the intention of those albums was to automatically include only the best photos for users, users still wanted to know that all the photos they took are there, and would prefer looking into the camera roll in the "Photos" tab.</span><br><br>
 
                 Therefore, I decided that the "Photos" tab was where the redesign should happen.</p>
@@ -415,7 +417,7 @@
 
                 I then started asking myself: <span class="highlight highlight-photos">do users really need to see all those similar photos in the photo roll at all?</span><br><br>
 
-                It seemed to be the convention to have all the photos displayed in the camera roll, at least in the expanded view; but as I referred back to the user needs and my design goal, I realized that this convention could be broken. <span class="highlight highlight-photos">The primary function of the camera roll is for users to quickly browse through and find/discover what they're looking for. There is no point of seeing several visually similar thumbnails there; users only care about how they differ when they can see the detailed image.</span><br><br>
+                It seemed to be the convention to have all the photos displayed in the camera roll, at least in the expanded view; but as I referred back to the user needs and my design goal, I realized that this convention could be broken. <span class="highlight highlight-photos"><strong>The primary function of the camera roll is for users to quickly browse through and find/discover what they're looking for. There is no point of seeing several visually similar thumbnails there; users only care about how they differ when they can see the detailed image.</strong></span><br><br>
 
                 Therefore, I developed the third alternative.
                  </p>
@@ -435,7 +437,7 @@
 
                  <img class="img-responsive full-img" src="../../assets/photos-important-moment-alternatives.png" alt="alternatives"> <br><br>
 
-                 <p><span class="highlight highlight-photos">I decided that using size to denote the number of photos in a group would be a better choice because size encodes more useful information in a way that people intuitively understands: the larger the size, the bigger the number.</span><br><br>
+                 <p><span class="highlight highlight-photos">I decided that using size to denote the number of photos in a group would be a better choice because <strong>size encodes more useful information in a way that people intuitively understands: the larger the size, the bigger the number.</strong></span><br><br>
 
                  However, this means that we'll need to slightly change the algorithm of how the photos will be displayed in the "Photos" tab. <span class="highlight highlight-photos">If I had access to developers, I would definitely consult with them about this change, and balance the value the change brings with the amount of effort we need to put into that change.</span><br><br>
 
@@ -460,16 +462,16 @@
 
                 <p>After redesigning the grid layout in the "Photos" tab, what would users see after they click into a user group then? <span class="highlight highlight-photos">Bringing in the concept of "photo groups" means that I need to think more about 1) how users would navigate between photos in those groups, and 2) how the existing interactions with those photos might be affected.</span><br><br>
 
-                For the first question, I referred back to user needs and put myself in the shoes of a user. <span class="highlight highlight-photos">Because of my limited time, I made an educated assumption that most of the times, users would only want to see the best photos as they swipe through their photo library.</span> Only for photos that they're really interested in will they want to see all the other similar ones they've taken.<br><br>
+                For the first question, I referred back to user needs and put myself in the shoes of a user. <span class="highlight highlight-photos">Because of my limited time, I made an educated assumption that most of the times, users would only need to see one photo within each photo group as they swipe through their photo library.</span> Only for photos that they're really interested in will they want to see all the other similar ones they've taken.<br><br>
 
                 With this assumption in mind, I started thinking about alternatives for the interaction.
                 </p>
 
                 <img class="img-responsive full-img" src="../../assets/photos-wireframes-swipe-alternatives.png" alt="swipe alternatives"> <br><br>
 
-                <p>At first glance, alternative 2 seems to be the worst choice for comparison between similar photos, because it's extremely hard for users to keep in mind the photos they want to compare when the positions of thumbnails are constantly changing. <span class="highlight highlight-photos">However, since I later decided to create a separate mode for comparison, the sole purpose for users to navigate between photos in this page becomes to quickly browse through them. For this purpose, alternative 2 together with alternative 1 becomes the best choice.</span> If I had time, I would bring it to users or other designers to get their input and validate this design decision.<br><br>
+                <p>At first glance, alternative 2 seems to be the worst choice for comparison between similar photos, because it's extremely hard for users to keep in mind the photos they want to compare when the positions of thumbnails are constantly changing. <span class="highlight highlight-photos">However, since I later decided to create <strong>a separate mode for comparison</strong>, the sole purpose for users to navigate between photos in this page becomes to quickly browse through them. For this purpose, <strong>alternative 2 together with alternative 1 becomes the best choice.</strong></span> If I had time, I would bring it to users or other designers to get their input and validate this design decision.<br><br>
 
-                As for how the redesign is going to change the current users' current interactions with photos, <span class="highlight highlight-photos">I explored all the ways users are able to interact with a photo currently, and thought about whether those interactions are more logical to be applied to a group of similar photos, or a single photo.</span>
+                As for how the redesign is going to change the users' current interactions with photos, <span class="highlight highlight-photos">I explored all the ways users are able to interact with a photo right now, and thought about whether those interactions are more logical to be applied to a group of similar photos, or a single photo.</span>
                  </p>
 
                 <img class="img-responsive full-img" src="../../assets/photos-detail-existing-features.png" alt="existing features"> <br><br><br><br><br>
@@ -483,10 +485,13 @@
                 <p>Another major task users usually need to carry out when they take lots of similar photos is to compare between different shots, delete the bad ones, or select the best ones to view, edit, or share. But this curation process is painful and time-consuming because <span class="highlight highlight-photos">1) users have to manually go through every photo to pick the good and delete the bad, and 2) it is extremely hard to compare between similar photos and spot the differences. How can I make the curation process easier?</span></p>
 
                 <h5 class="photos-h5">Using Machine Learning to Recommend the Best Photos</h5>
-                <p><span class="highlight highlight-photos">One way to relieve users from the burden of selecting the best photos is to suggest the best ones for quick actions.</span> Using Machine Learning, it is possible to identify photos with the best lightings, compositions, and even those in which everyone's smiling. Google Clip has been using similar algorithms to suggest best moments in a video. It would be possible to further apply similar technologies in Google Photos to automatically suggest the best photo within a photo group, and enable users to quickly share it or delete the others.</p>
+                <p><span class="highlight highlight-photos">One way to relieve users from the burden of selecting the best photos is to suggest the best ones for quick actions.</span> Using Machine Learning, it is possible to identify photos with the best lightings, compositions, and even those in which everyone's smiling. Google Clip has been using similar algorithms to suggest best moments in a video. It would be possible to further apply similar technologies in Google Photos to automatically suggest the best photo within a photo group, and enable users to quickly share it or delete the others.<br><br>
+
+                However, the notion of "a best photo" is highly subjective. <span class="highlight highlight-photos">As a designer, I also want to <strong>give my users control</strong> even when my design leverages the most advanced algorithms to simplify the process.<span> That's why I decided to provide another function to help them compare between similar photos more quickly.
+                 </p>
 
                 <h5 class="photos-h5">Facilitating Comparison</h5>
-                <p>Almost all users I interviewed complained that it is hard to scroll through similar photos and compare between them. Here's how they currently compare between similar images:</p>
+                <p>Almost all users I interviewed complained that <span class="highlight highlight-photos">it is so hard to scroll through similar photos and compare between them.</span> Here's how they do the comparison now:</p>
 
                 <p class="p-center-wrapper"><video autoplay muted loop class="video-features" style="max-width:200px">
                   <source src="../../assets/photos-compare-current.mp4"/>
@@ -499,7 +504,9 @@
 
                 <img class="img-responsive full-img" src="../../assets/photos-change-blindness.png" alt="change blindness"> <br><br><br>
 
-                <p><span class="highlight highlight-photos">If side-by-side comparison is already difficult, then think about how hard it is to scroll and see slightly different images one by one, and try to compare the current one with another one you saw 10 seconds ago.</span><br><br>
+                <p><strong>It's hard, right?</strong> <br><br>
+
+                <span class="highlight highlight-photos">If side-by-side comparison is already difficult, then think about how hard it is to scroll and see slightly different images one by one, and try to compare the current one with another one you saw 10 seconds ago.</span><br><br>
 
                 The quickest and the most effortless way to compare the differences between 2 images is to <span class="highlight highlight-photos">show them sequentially, with no interruptions in between,</span> similar to how users can compare between edited images and original images in Google Photos, Apple Photos, and Instagram.</p>
 
@@ -511,7 +518,7 @@
                 </p>
 
                 <h5 class="photos-h5">Design Alternatives</h5>
-                <p><span class="highlight highlight-photos">Since it is hard to use paper or even clickable prototypes to illustrate how users can compare different photos, and whether the comparison method works, I quickly created the following alternatives in Principle and used real photos to illustrate the use cases.</span> I walked through the usage scenario myself and show the prototypes to others for feedback as well.</p>
+                <p><span class="highlight highlight-photos">Since it is hard to use paper or even clickable prototypes to illustrate how users can compare different photos, and whether the comparison method works, I quickly created the following alternatives in Principle and used real photos to illustrate the use cases.</span> I walked through the usage scenario myself and showed the prototypes to others for feedback as well.</p>
 
 
                 <div class="row feature-row">
@@ -617,13 +624,13 @@
 
                       Some of the shortcomings of alternatives 1 and 2 can be resolved by merging the two. We can use most of the interactions in alternative 2 and make the following change: instead of letting users double tap or scroll to pin a photo, we can let them drag a thumbnail up to pin it on the screen.<br><br>
 
-                      <span class="highlight highlight-photos">Eventually, I still decided to further develop the 3rd alternative, because it doesn't require users to change their habits much.</span> Considering the large user base of the app, it might be hard to let all the users of Google Photos quickly learn the interactions in alternative 2, though once learned, it might be more efficient. <span class="highlight highlight-photos">However, if I had more time, I'd definitely gather more user feedback, or conduct A/B test to decide on the final interaction.</span>
+                      <span class="highlight highlight-photos">Eventually, <strong>I still decided to further develop the 3rd alternative</strong>, because it doesn't require users to change their habits much.</span> Considering the large user base of the app, it might be hard to let all the users of Google Photos quickly learn the interactions in alternative 2, though once learned, it might be more efficient. <span class="highlight highlight-photos">However, if I had more time, I'd definitely gather more user feedback, or conduct A/B test to decide on the final interaction.</span>
 
                     </p>
 
 
                     <h5 class="photos-h5">Separate Mode or Not?</h5>
-                    <p class="small-margin-bottom">I had the option of directly adding the comparison feature to the photo details page, or creating a separate "Compare Mode" to better help users compare photos. I decided to create a separate mode for it for the following reasons:</p><br>
+                    <p class="small-margin-bottom">I had the option of directly adding the comparison feature to the photo details page, or creating a separate "Compare Mode" to better help users compare photos. <strong>I decided to create a separate mode for it</strong> for the following reasons:</p><br>
                     <img class="img-responsive full-img" src="../../assets/photos-separate-mode.png" alt="separate modes"> <br><br><br><br><br>
 
               </div>
@@ -728,11 +735,11 @@
 
               <div id="edge-cases" class="subgroup">
                 <h4>Technical Details for Grouping</h4>
-                <p>One of the key functions that determine the success of the design solution is grouping similar photos. But how to define "similar" photos? What's the boundary between one photo group and another, they're all taken around the same time, with similar peoples, at the same place? There are lots of different use cases for why people would take photos and upload them to Google Photos, which means that we'll need to consider all of them if we're going to change the existing product.<br><br>
+                <p>One of the key functions that determine the success of the design solution is grouping similar photos. But how to define "similar" photos? What's the boundary between one photo group and another, if they're all taken around the same time, with similar peoples, at the same place? There are lots of different use cases for why people would take photos and upload them to Google Photos, which means that we'll need to consider all of them if we're going to change the existing product.<br><br>
 
                 <span class="highlight highlight-photos">If this were a real project, I would definitely start working with engineers from the inception of the grouping idea to make sure that we train the Machine Learning algorithm the right way and consider different edge cases.</span> <br><br>
 
-                In addition, photo groups contain different numbers of photos, and are displayed using different sizes on the camera roll. How do we divide the numbers and map them to different sizes? Should a 16-photo group take up a 2x2 grid or 4x4 grid? Will this differ according to users' habit for taking photos? This is also something I need to <span class="highlight highlight-photos">discuss with engineers and see the real user data</span> to make a final decision.<br><br>
+                In addition, photo groups contain different numbers of photos, and are displayed using different sizes on the camera roll. How do we segment the numbers and map them to different sizes? Should a 16-photo group take up a 2x2 grid or 4x4 grid? Will this differ according to users' habit for taking photos? This is also something I need to <span class="highlight highlight-photos">discuss with engineers and see the real user data</span> to make a final decision.<br><br>
 
                 </p>
               </div>
@@ -759,9 +766,9 @@
                 <p>Google Photos already groups Burst Photos into one group and allows users to set a key photo and delete the rest. However, the functionalities are limited to Burst, so the use cases are different. <span class="highlight highlight-photos">Right now, I'm using a different icon to signify Photo Groups; however, since grouping similar photos and grouping burst photos are similar concepts, I might think further about whether it makes sense to distinguish them, and if not, how to merge these two functionalities into one that fits both use cases.</span></p>
 
                 <h5 class="photos-h5">Top Shot in Pixel 3</h5>
-                <p>Google's Pixel 3 has the Top Shot function, which automatically takes several photos for users on one click, and recommends one to users afterwards. This function, if it becomes more common in other smartphones, might solve people's problem of having too many similar photos from another perspective--if the phone automatically takes a number of photos and selects the best, then the user won't need to take a lot of photos of the same thing in the first place as a fail safe.<br><br>
+                <p>Google's Pixel 3 has the Top Shot function, which automatically takes several photos for users on one click, and recommends one to users afterwards. This function is approaching people's problem of having too many similar photos from another angle--if the phone automatically takes a number of photos and selects the best, then the user won't need to take a lot of photos of the same thing in the first place as a fail safe.<br><br>
 
-                <span class="highlight highlight-photos">However, I believe that the grouping function is still necessary because 1) Top Shot is only available on Pixel 3, not on other smartphones or cameras. It might take a long time for people to stop taking multiple similar photos once functions like Top Shot becomes commonplace. 2) Even then, people would still like to experiment with slightly different angles and lightings when taking photographs. That's a use case in which we still need to help them group similar photos afterwards.</span><br><br>
+                <span class="highlight highlight-photos">However, I believe that the grouping function is still necessary because 1) Top Shot is only available on Pixel 3, not on other smartphones or cameras. It might take a long time for people to stop taking multiple similar photos even after functions like Top Shot becomes commonplace. 2) Even then, people would still like to experiment with slightly different angles and lightings when taking photographs. That's a use case in which we still need to help them group similar photos afterwards.</span><br><br>
 
                 There are several similarities between Top Shot and Photo Groups, and both are related to Google Photos. As a future step, I'll need to think about how to make their interfaces/interactions consistent.
                 </p>
