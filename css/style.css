@@ -167,6 +167,11 @@ hr {
   background-size:cover;
 }
 
+.bg-google {
+  background: url('../assets/google-jumbotron.png') no-repeat center center;
+  background-size:cover;
+}
+
 .jumbotron {
   height: 100vh;
   color: var(--primary-black);
