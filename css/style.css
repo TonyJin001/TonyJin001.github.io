@@ -14,6 +14,7 @@
     --highlight-eatxplore: #F9CB4260;
     --highlight-thriller: #BB142215;
     --highlight-photos: #1A73E825;
+    --highlight-google: #366FF225;
     --highlight-about: #9EEBCF60;
 
     --THD-color:#F96302;
@@ -22,6 +23,7 @@
     --about-color: #44DCC4;
     --cookfresh-color: #CFEB68;
     --photos-color:#1A73E8;
+    --google-color:#366FF2;
 }
 
 
@@ -631,6 +633,11 @@ hr {
 
 .photos-h5 {
   border-left: 6px solid var(--photos-color);
+  padding-left: 28px;
+}
+
+.google-h5 {
+  border-left: 6px solid var(--google-color);
   padding-left: 28px;
 }
 
