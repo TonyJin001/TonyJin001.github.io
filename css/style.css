@@ -70,8 +70,21 @@ hr {
     box-shadow: 2px 4px 24px rgba(0,0,0,0.10);
 }
 
+.video-features-google {
+    width: 90%;
+    box-shadow: 2px 4px 24px rgba(0,0,0,0.10);
+}
+
 .video-feature-title {
   margin-top: 12vw;
+  font-family: 'Circular Std Black' !important;
+  font-size: 34px !important;
+  padding-bottom: 12px;
+  line-height: 40px !important;
+}
+
+.video-feature-title-google {
+  margin-top: 8vw;
   font-family: 'Circular Std Black' !important;
   font-size: 34px !important;
   padding-bottom: 12px;
@@ -581,6 +594,14 @@ hr {
 
 .highlight-photos.shown {
   background-image: linear-gradient(to right, transparent 50%, var(--highlight-photos) 50%);
+}
+
+.highlight-google {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-google) 50%);
+}
+
+.highlight-google.shown {
+  background-image: linear-gradient(to right, transparent 50%, var(--highlight-google) 50%);
 }
 
 .highlight-link {
